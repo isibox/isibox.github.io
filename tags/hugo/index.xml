@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on Cloud-Guru&#39;s Blog</title>
+    <link>http://isibox.github.io/tags/hugo/</link>
+    <description>Recent content in hugo on Cloud-Guru&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 26 Feb 2022 16:28:56 +0100</lastBuildDate><atom:link href="http://isibox.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create a Blog With Hugo and Github</title>
+      <link>http://isibox.github.io/posts/create-blog-with-hugo-and-github/</link>
+      <pubDate>Sat, 26 Feb 2022 16:28:56 +0100</pubDate>
+      
+      <guid>http://isibox.github.io/posts/create-blog-with-hugo-and-github/</guid>
+      <description>Prerequisites on Github  Create a public respository blog_code for storing the code. Create an another public repository mygithubname.github.io to deploy (publish) the site. This one must have the same name as the Github username.  Open a shell on your dev environment Clone the blog_code respository.
+1 2  git clone git@github.com:isibox/blog_code.git   Go to the blog_code folder.
+1 2  cd blog_code   Create a new site with Hugo</description>
+    </item>
+    
+  </channel>
+</rss>

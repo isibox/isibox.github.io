@@ -3,7 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://isibox.github.io/</loc>
-    <lastmod>2022-02-26T15:18:53+01:00</lastmod>
+    <lastmod>2022-02-26T16:28:56+01:00</lastmod>
+  </url><url>
+    <loc>http://isibox.github.io/posts/create-blog-with-hugo-and-github/</loc>
+    <lastmod>2022-02-26T16:28:56+01:00</lastmod>
+  </url><url>
+    <loc>http://isibox.github.io/tags/github/</loc>
+    <lastmod>2022-02-26T16:28:56+01:00</lastmod>
+  </url><url>
+    <loc>http://isibox.github.io/tags/hugo/</loc>
+    <lastmod>2022-02-26T16:28:56+01:00</lastmod>
+  </url><url>
+    <loc>http://isibox.github.io/posts/</loc>
+    <lastmod>2022-02-26T16:28:56+01:00</lastmod>
+  </url><url>
+    <loc>http://isibox.github.io/tags/</loc>
+    <lastmod>2022-02-26T16:28:56+01:00</lastmod>
   </url><url>
     <loc>http://isibox.github.io/tags/code-blocks/</loc>
     <lastmod>2022-02-26T15:18:53+01:00</lastmod>
@@ -14,13 +29,7 @@
     <loc>http://isibox.github.io/posts/my-first-post/</loc>
     <lastmod>2022-02-26T15:18:53+01:00</lastmod>
   </url><url>
-    <loc>http://isibox.github.io/posts/</loc>
-    <lastmod>2022-02-26T15:18:53+01:00</lastmod>
-  </url><url>
     <loc>http://isibox.github.io/tags/shortcodes/</loc>
-    <lastmod>2022-02-26T15:18:53+01:00</lastmod>
-  </url><url>
-    <loc>http://isibox.github.io/tags/</loc>
     <lastmod>2022-02-26T15:18:53+01:00</lastmod>
   </url><url>
     <loc>http://isibox.github.io/categories/</loc>
