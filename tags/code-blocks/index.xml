@@ -14,8 +14,8 @@
       
       <guid>http://isibox.github.io/posts/my-first-post/</guid>
       <description>A simple example of bash block code:
-1  echo &amp;#34;My first post with hugo&amp;#34;   An another example of terraform block code:
-1 2 3 4  resource &amp;#34;a_resource&amp;#34; &amp;#34;my_resource_name&amp;#34; { key = &amp;#34;value&amp;#34; anotherkey = &amp;#34;another value&amp;#34; }   And finally, a graph with mermaid description:
+echo &amp;#34;My first post with hugo&amp;#34; An another example of terraform block code:
+resource &amp;#34;a_resource&amp;#34; &amp;#34;my_resource_name&amp;#34; { key = &amp;#34;value&amp;#34; anotherkey = &amp;#34;another value&amp;#34; } And finally, a graph with mermaid description:
 graph LR A--B A--C B--D C--D   </description>
     </item>
     
