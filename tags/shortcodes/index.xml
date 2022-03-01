@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>shortcodes on Cloud-Guru&#39;s Blog</title>
+    <title>shortcodes on Le Blog Cloud-Guru</title>
     <link>http://isibox.github.io/tags/shortcodes/</link>
-    <description>Recent content in shortcodes on Cloud-Guru&#39;s Blog</description>
+    <description>Recent content in shortcodes on Le Blog Cloud-Guru</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 26 Feb 2022 15:18:53 +0100</lastBuildDate><atom:link href="http://isibox.github.io/tags/shortcodes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
-      <link>http://isibox.github.io/posts/my-first-post/</link>
+      <link>http://isibox.github.io/blog/my-first-post/</link>
       <pubDate>Sat, 26 Feb 2022 15:18:53 +0100</pubDate>
       
-      <guid>http://isibox.github.io/posts/my-first-post/</guid>
+      <guid>http://isibox.github.io/blog/my-first-post/</guid>
       <description>A simple example of bash block code:
 echo &amp;#34;My first post with hugo&amp;#34; An another example of terraform block code:
 resource &amp;#34;a_resource&amp;#34; &amp;#34;my_resource_name&amp;#34; { key = &amp;#34;value&amp;#34; anotherkey = &amp;#34;another value&amp;#34; } And finally, a graph with mermaid description:
