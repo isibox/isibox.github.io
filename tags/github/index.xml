@@ -14,8 +14,8 @@
       
       <guid>http://isibox.github.io/blog/create-blog-with-hugo-and-github/</guid>
       <description>Prerequisites on Github  Create a public respository blog_code for storing the code. Create an another public repository mygithubname.github.io to deploy (publish) the site. This one must have the same name as the Github username.  Open a shell on your dev environment Clone the blog_code respository.
-git clone git@github.com:isibox/blog_code.git Go to the blog_code folder.
-cd blog_code Create a new site with Hugo hugo new site cloud-guru-blog Install a theme for Hugo Go to new site folder, and then in the themes folder.</description>
+1  git clone git@github.com:isibox/blog_code.git   Go to the blog_code folder.
+1  cd blog_code   Create a new site with Hugo 1  hugo new site cloud-guru-blog   Install a theme for Hugo Go to new site folder, and then in the themes folder.</description>
     </item>
     
   </channel>
