@@ -6,13 +6,13 @@
     <description>Recent content in shortcodes on Le Blog Cloud-Guru</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Sat, 26 Feb 2022 15:18:53 +0100</lastBuildDate><atom:link href="http://isibox.github.io/tags/shortcodes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Feb 2020 15:18:53 +0100</lastBuildDate><atom:link href="http://isibox.github.io/tags/shortcodes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
-      <link>http://isibox.github.io/blog/my-first-post/</link>
-      <pubDate>Sat, 26 Feb 2022 15:18:53 +0100</pubDate>
+      <link>http://isibox.github.io/posts/my-first-post/</link>
+      <pubDate>Wed, 26 Feb 2020 15:18:53 +0100</pubDate>
       
-      <guid>http://isibox.github.io/blog/my-first-post/</guid>
+      <guid>http://isibox.github.io/posts/my-first-post/</guid>
       <description>A simple example of bash block code:
 echo &amp;#34;Date: $(date)&amp;#34; echo &amp;#34;My first post with hugo&amp;#34; An another example of terraform block code:
 1 2 3 4  resource &amp;#34;a_resource&amp;#34; &amp;#34;my_resource_name&amp;#34; { key = &amp;#34;value&amp;#34; anotherkey = &amp;#34;another value&amp;#34; }   And finally, a graph with mermaid description:
