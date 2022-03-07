@@ -1,106 +1,253 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Le Blog Cloud-Guru</title>
+        <title>Cloud-Guru, le Blog</title>
         <link>http://isibox.github.io/</link>
-        <description>Recent content on Le Blog Cloud-Guru</description>
+        <description>Recent content on Cloud-Guru, le Blog</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>fr-fr</language>
-        <lastBuildDate>Sat, 05 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://isibox.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Create a Blog With Hugo and Github</title>
-        <link>http://isibox.github.io/post/create-blog-with-hugo-and-github/</link>
-        <pubDate>Sat, 26 Feb 2022 16:28:56 +0100</pubDate>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 07 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://isibox.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Démarrez ici !</title>
+        <link>http://isibox.github.io/page/start/</link>
+        <pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate>
         
-        <guid>http://isibox.github.io/post/create-blog-with-hugo-and-github/</guid>
-        <description>&lt;h2 id=&#34;prerequisites-on-github&#34;&gt;Prerequisites on Github&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Create a public respository &lt;strong&gt;blog_code&lt;/strong&gt; for storing the code.&lt;/li&gt;
-&lt;li&gt;Create an another public repository &lt;strong&gt;mygithubname.github.io&lt;/strong&gt; to deploy (publish) the site. This one must have the same name as the Github username.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;open-a-shell-on-your-dev-environment&#34;&gt;Open a shell on your dev environment&lt;/h2&gt;
-&lt;p&gt;Clone the blog_code respository.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git clone git@github.com:isibox/blog_code.git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Go to the blog_code folder.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#24909d&#34;&gt;cd&lt;/span&gt; blog_code
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;create-a-new-site-with-hugo&#34;&gt;Create a new site with Hugo&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo new site cloud-guru-blog
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;install-a-theme-for-hugo&#34;&gt;Install a theme for Hugo&lt;/h3&gt;
-&lt;p&gt;Go to new site folder, and then in the themes folder.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#24909d&#34;&gt;cd&lt;/span&gt; ./cloud-guru-blog/themes
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Clone the themes you want to use.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git clone https://github.com/CaiJimmy/hugo-theme-stack.git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Go back to the site folder and rename the config.toml file site.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#24909d&#34;&gt;cd&lt;/span&gt; ..
-mv config.toml config.yml
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Configure the site to use the chosen theme&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;baseURL&lt;/span&gt;:&lt;span style=&#34;color:#666&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;http://isibox.github.io/&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;
-&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;languageCode&lt;/span&gt;:&lt;span style=&#34;color:#666&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;en-us&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;
-&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;title&lt;/span&gt;:&lt;span style=&#34;color:#666&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;Cloud-Guru&amp;#39;s Blog&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;
-&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;theme&lt;/span&gt;:&lt;span style=&#34;color:#666&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;hugo-theme-stack&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;create-a-first-post&#34;&gt;Create a first post&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo new posts/my-first-post.md
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And then, edit the file and write an simple example like below:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#447fcf;text-decoration:underline&#34;&gt;---&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;
-&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;title&lt;/span&gt;:&lt;span style=&#34;color:#666&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;My First Post&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;
-&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;date&lt;/span&gt;:&lt;span style=&#34;color:#666&#34;&gt; &lt;/span&gt;2022-02-26T15:18:53&lt;span style=&#34;color:#3677a9&#34;&gt;+01&lt;/span&gt;:&lt;span style=&#34;color:#3677a9&#34;&gt;00&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;
-&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;tags&lt;/span&gt;:&lt;span style=&#34;color:#666&#34;&gt;
-&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;  &lt;/span&gt;- shortcodes&lt;span style=&#34;color:#666&#34;&gt;
-&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;  &lt;/span&gt;- code blocks&lt;span style=&#34;color:#666&#34;&gt;
-&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;  &lt;/span&gt;- mermaid&lt;span style=&#34;color:#666&#34;&gt;
-&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#447fcf;text-decoration:underline&#34;&gt;---&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;
-&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;
-&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;A simple example of bash block code&lt;/span&gt;:&lt;span style=&#34;color:#666&#34;&gt;
-&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;
-&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;&lt;/span&gt;```bash&lt;span style=&#34;color:#666&#34;&gt;
-&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;&lt;/span&gt;echo &amp;#34;My first post with hugo&amp;#34;&lt;span style=&#34;color:#666&#34;&gt;
-&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;&lt;/span&gt;```&lt;span style=&#34;color:#666&#34;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Go back to your local source code repository and clone the push repository&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git clone git@github.com:isibox/isibox.github.io.git
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Go in deploy repository and create a new branch main. and then create an empty README.md file.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#24909d&#34;&gt;cd&lt;/span&gt; isibox.github.io
-git checkout -b main
-touch README.md
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then commit the change:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git status
-git add .
-git commit -m &lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;init commit&amp;#34;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And then push the result:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git push origin main
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now you should&lt;/p&gt;
+        <guid>http://isibox.github.io/page/start/</guid>
+        <description>&lt;img src="http://isibox.github.io/page/start/start-here.jpg" alt="Featured image of post Démarrez ici !" /&gt;&lt;p&gt;Bientôt disponible.&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>My First Post</title>
-        <link>http://isibox.github.io/post/my-first-post/</link>
-        <pubDate>Wed, 26 Feb 2020 15:18:53 +0100</pubDate>
+        <title>Mentions légales</title>
+        <link>http://isibox.github.io/page/legal/</link>
+        <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
         
-        <guid>http://isibox.github.io/post/my-first-post/</guid>
-        <description>&lt;img src="http://isibox.github.io/img/Your-First-Blog-Post-1024x576.jpeg" alt="Featured image of post My First Post" /&gt;&lt;p&gt;A simple example of bash block code:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#24909d&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;Date: &lt;/span&gt;&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;$(&lt;/span&gt;date&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;&lt;/span&gt;
-&lt;span style=&#34;color:#24909d&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;My first post with hugo&amp;#34;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;An another example of terraform block code:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-terraform&#34; data-lang=&#34;terraform&#34;&gt;&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;resource&lt;/span&gt; &lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;a_resource&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;my_resource_name&amp;#34;&lt;/span&gt; {
-  &lt;span style=&#34;color:#bbb&#34;&gt;key&lt;/span&gt; = &lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;value&amp;#34;&lt;/span&gt;
-  &lt;span style=&#34;color:#bbb&#34;&gt;anotherkey&lt;/span&gt; = &lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;another value&amp;#34;&lt;/span&gt;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And finally, a graph with mermaid description:&lt;/p&gt;
-&lt;div class=&#34;mermaid&#34;&gt;
-  
-graph LR
-  A--&gt;B
-  A--&gt;C
-  B--&gt;D
-  C--&gt;D
-
-&lt;/div&gt;
-
-
-
-&lt;script async src=&#34;https://unpkg.com/mermaid@8.14.0/dist/mermaid.min.js&#34;&gt;&lt;/script&gt;
-
-
+        <guid>http://isibox.github.io/page/legal/</guid>
+        <description>&lt;h2 id=&#34;définitions&#34;&gt;Définitions&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Client :&lt;/strong&gt; tout professionnel ou personne physique capable au sens des articles 1123 et suivants du Code civil, ou personne morale, qui visite le Site objet des présentes conditions générales.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Prestations et Services :&lt;/strong&gt; &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; met à disposition des Clients :&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Contenu :&lt;/strong&gt; Ensemble des éléments constituants l’information présente sur le Site, notamment textes – images – vidéos.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Informations clients :&lt;/strong&gt; Ci après dénommé « Information (s) » qui correspondent à l’ensemble des données personnelles susceptibles d’être détenues par &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; pour la gestion de votre compte, de la gestion de la relation client et à des fins d’analyses et de statistiques.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Utilisateur :&lt;/strong&gt; Internaute se connectant, utilisant le site susnommé.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Informations personnelles :&lt;/strong&gt; « Les informations qui permettent, sous quelque forme que ce soit, directement ou non, l&amp;rsquo;identification des personnes physiques auxquelles elles s&amp;rsquo;appliquent » (article 4 de la loi n° 78-17 du 6 janvier 1978).
+Les termes « données à caractère personnel », « personne concernée », « sous traitant » et « données sensibles » ont le sens défini par le Règlement Général sur la Protection des Données (RGPD : n° 2016-679)&lt;/p&gt;
+&lt;h2 id=&#34;1-présentation-du-site-internet&#34;&gt;1. Présentation du site internet&lt;/h2&gt;
+&lt;p&gt;En vertu de l&amp;rsquo;article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l&amp;rsquo;économie numérique, il est précisé aux utilisateurs du site internet &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; l&amp;rsquo;identité des différents intervenants dans le cadre de sa réalisation et de son suivi:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Propriétaire&lt;/strong&gt; :   Henri RASCOL   – 8 allée Camille Saint-Saëns 91160 BALLAINVILLIERS&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Responsable publication&lt;/strong&gt; : Henri RASCOL – &lt;a class=&#34;link&#34; href=&#34;mailto:hrascol@cloud-guru.io&#34; &gt;hrascol@cloud-guru.io&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Le responsable publication est une personne physique ou une personne morale.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Webmaster&lt;/strong&gt; : Henri RASCOL – &lt;a class=&#34;link&#34; href=&#34;mailto:hrascol@cloud-guru.io&#34; &gt;hrascol@cloud-guru.io&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hébergeur&lt;/strong&gt; : GitHub B.V. – Vijzelstraat 68-72 1017 HL Amsterdam, Pays-Bas&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Délégué à la protection des données&lt;/strong&gt; : Henri RASCOL – &lt;a class=&#34;link&#34; href=&#34;mailto:hrascol@cloud-guru.io&#34; &gt;hrascol@cloud-guru.io&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ces mentions légales RGPD sont issues du &lt;a class=&#34;link&#34; href=&#34;https://fr.orson.io/1371/generateur-mentions-legales&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;générateur gratuit offert par Orson.io&lt;/a&gt; générateur gratuit offert par Orson.io&lt;/p&gt;
+&lt;h2 id=&#34;2-conditions-générales-dutilisation-du-site-et-des-services-proposés&#34;&gt;2. Conditions générales d’utilisation du site et des services proposés&lt;/h2&gt;
+&lt;p&gt;Le Site constitue une œuvre de l’esprit protégée par les dispositions du Code de la Propriété Intellectuelle et des Réglementations Internationales applicables.
+Le Client ne peut en aucune manière réutiliser, céder ou exploiter pour son propre compte tout ou partie des éléments ou travaux du Site.&lt;/p&gt;
+&lt;p&gt;L’utilisation du site &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; implique l’acceptation pleine et entière des conditions générales d’utilisation ci-après décrites. Ces conditions d’utilisation sont susceptibles d’être modifiées ou complétées à tout moment, les utilisateurs du site &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; sont donc invités à les consulter de manière régulière.&lt;/p&gt;
+&lt;p&gt;Ce site internet est normalement accessible à tout moment aux utilisateurs. Une interruption pour raison de maintenance technique peut être toutefois décidée par &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt;, qui s’efforcera alors de communiquer préalablement aux utilisateurs les dates et heures de l’intervention.
+Le site web &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; est mis à jour régulièrement par &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; responsable. De la même façon, les mentions légales peuvent être modifiées à tout moment : elles s’imposent néanmoins à l’utilisateur qui est invité à s’y référer le plus souvent possible afin d’en prendre connaissance.&lt;/p&gt;
+&lt;h2 id=&#34;3-description-des-services-fournis&#34;&gt;3. Description des services fournis&lt;/h2&gt;
+&lt;p&gt;Le site internet &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; a pour objet de fournir une information concernant l’ensemble des activités de la société.
+&lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; s’efforce de fournir sur le site &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; des informations aussi précises que possible. Toutefois, il ne pourra être tenu responsable des oublis, des inexactitudes et des carences dans la mise à jour, qu’elles soient de son fait ou du fait des tiers partenaires qui lui fournissent ces informations.&lt;/p&gt;
+&lt;p&gt;Toutes les informations indiquées sur le site &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; sont données à titre indicatif, et sont susceptibles d’évoluer. Par ailleurs, les renseignements figurant sur le site &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; ne sont pas exhaustifs. Ils sont donnés sous réserve de modifications ayant été apportées depuis leur mise en ligne.&lt;/p&gt;
+&lt;h2 id=&#34;4-limitations-contractuelles-sur-les-données-techniques&#34;&gt;4. Limitations contractuelles sur les données techniques&lt;/h2&gt;
+&lt;p&gt;Le site utilise la technologie JavaScript.&lt;/p&gt;
+&lt;p&gt;Le site Internet ne pourra être tenu responsable de dommages matériels liés à l’utilisation du site. De plus, l’utilisateur du site s’engage à accéder au site en utilisant un matériel récent, ne contenant pas de virus et avec un navigateur de dernière génération mis-à-jour
+Le site &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; est hébergé chez un prestataire sur le territoire de l’Union Européenne conformément aux dispositions du Règlement Général sur la Protection des Données (RGPD : n° 2016-679)&lt;/p&gt;
+&lt;p&gt;L’objectif est d’apporter une prestation qui assure le meilleur taux d’accessibilité. L’hébergeur assure la continuité de son service 24 Heures sur 24, tous les jours de l’année. Il se réserve néanmoins la possibilité d’interrompre le service d’hébergement pour les durées les plus courtes possibles notamment à des fins de maintenance, d’amélioration de ses infrastructures, de défaillance de ses infrastructures ou si les Prestations et Services génèrent un trafic réputé anormal.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; et l’hébergeur ne pourront être tenus responsables en cas de dysfonctionnement du réseau Internet, des lignes téléphoniques ou du matériel informatique et de téléphonie lié notamment à l’encombrement du réseau empêchant l’accès au serveur.&lt;/p&gt;
+&lt;h2 id=&#34;5-propriété-intellectuelle-et-contrefaçons&#34;&gt;5. Propriété intellectuelle et contrefaçons&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; est propriétaire des droits de propriété intellectuelle et détient les droits d’usage sur tous les éléments accessibles sur le site internet, notamment les textes, images, graphismes, logos, vidéos, icônes et sons.&lt;/p&gt;
+&lt;p&gt;Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de : &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Toute exploitation non autorisée du site ou de l’un quelconque des éléments qu’il contient sera considérée comme constitutive d’une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de Propriété Intellectuelle.&lt;/p&gt;
+&lt;h2 id=&#34;6-limitations-de-responsabilité&#34;&gt;6. Limitations de responsabilité&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; agit en tant qu’éditeur du site. &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt;  est responsable de la qualité et de la véracité du Contenu qu’il publie.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; ne pourra être tenu responsable des dommages directs et indirects causés au matériel de l’utilisateur, lors de l’accès au site internet &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt;, et résultant soit de l’utilisation d’un matériel ne répondant pas aux spécifications indiquées au point 4, soit de l’apparition d’un bug ou d’une incompatibilité.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; ne pourra également être tenu responsable des dommages indirects (tels par exemple qu’une perte de marché ou perte d’une chance) consécutifs à l’utilisation du site &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Des espaces interactifs (possibilité de poser des questions dans l’espace contact) sont à la disposition des utilisateurs. &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; se réserve le droit de supprimer, sans mise en demeure préalable, tout contenu déposé dans cet espace qui contreviendrait à la législation applicable en France, en particulier aux dispositions relatives à la protection des données. Le cas échéant, &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; se réserve également la possibilité de mettre en cause la responsabilité civile et/ou pénale de l’utilisateur, notamment en cas de message à caractère raciste, injurieux, diffamant, ou pornographique, quel que soit le support utilisé (texte, photographie …).&lt;/p&gt;
+&lt;h2 id=&#34;7-gestion-des-données-personnelles&#34;&gt;7. Gestion des données personnelles&lt;/h2&gt;
+&lt;p&gt;Le Client est informé des réglementations concernant la communication marketing, la loi du 21 Juin 2014 pour la confiance dans l’Economie Numérique, la Loi Informatique et Liberté du 06 Août 2004 ainsi que du Règlement Général sur la Protection des Données (RGPD : n° 2016-679).&lt;/p&gt;
+&lt;h3 id=&#34;71-responsables-de-la-collecte-des-données-personnelles&#34;&gt;7.1 Responsables de la collecte des données personnelles&lt;/h3&gt;
+&lt;p&gt;Pour les Données Personnelles collectées dans le cadre de la création du compte personnel de l’Utilisateur et de sa navigation sur le Site, le responsable du traitement des Données Personnelles est : Henri RASCOL. &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt;est représenté par Henri RASCOL, son représentant légal&lt;/p&gt;
+&lt;p&gt;En tant que responsable du traitement des données qu’il collecte, &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; s’engage à respecter le cadre des dispositions légales en vigueur. Il lui appartient notamment au Client d’établir les finalités de ses traitements de données, de fournir à ses prospects et clients, à partir de la collecte de leurs consentements, une information complète sur le traitement de leurs données personnelles et de maintenir un registre des traitements conforme à la réalité.&lt;/p&gt;
+&lt;p&gt;Chaque fois que &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; traite des Données Personnelles, &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; prend toutes les mesures raisonnables pour s’assurer de l’exactitude et de la pertinence des Données Personnelles au regard des finalités pour lesquelles &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; les traite.&lt;/p&gt;
+&lt;h3 id=&#34;72-finalité-des-données-collectées&#34;&gt;7.2 Finalité des données collectées&lt;/h3&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; est susceptible de traiter tout ou partie des données :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;pour permettre la navigation sur le Site et la gestion et la traçabilité des prestations et services commandés par l’utilisateur : données de connexion et d’utilisation du Site, facturation, historique des commandes, etc.&lt;/li&gt;
+&lt;li&gt;pour prévenir et lutter contre la fraude informatique (spamming, hacking…) : matériel informatique utilisé pour la navigation, l’adresse IP, le mot de passe (hashé)&lt;/li&gt;
+&lt;li&gt;pour améliorer la navigation sur le Site : données de connexion et d’utilisation&lt;/li&gt;
+&lt;li&gt;pour mener des enquêtes de satisfaction facultatives sur &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; : adresse email&lt;/li&gt;
+&lt;li&gt;pour mener des campagnes de communication (sms, mail) : numéro de téléphone, adresse email&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; ne commercialise pas vos données personnelles qui sont donc uniquement utilisées par nécessité ou à des fins statistiques et d’analyses.&lt;/p&gt;
+&lt;h3 id=&#34;73-droit-daccès-de-rectification-et-dopposition&#34;&gt;7.3 Droit d’accès, de rectification et d’opposition&lt;/h3&gt;
+&lt;p&gt;Conformément à la réglementation européenne en vigueur, les Utilisateurs de &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; disposent des droits suivants :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;droit d&amp;rsquo;accès (article 15 RGPD) et de rectification (article 16 RGPD), de mise à jour, de complétude des données des Utilisateurs droit de verrouillage ou d’effacement des données des Utilisateurs à caractère personnel (article 17 du RGPD), lorsqu’elles sont inexactes, incomplètes, équivoques, périmées, ou dont la collecte, l&amp;rsquo;utilisation, la communication ou la conservation est interdite&lt;/li&gt;
+&lt;li&gt;droit de retirer à tout moment un consentement (article 13-2c RGPD)&lt;/li&gt;
+&lt;li&gt;droit à la limitation du traitement des données des Utilisateurs (article 18 RGPD)&lt;/li&gt;
+&lt;li&gt;droit d’opposition au traitement des données des Utilisateurs (article 21 RGPD)&lt;/li&gt;
+&lt;li&gt;droit à la portabilité des données que les Utilisateurs auront fournies, lorsque ces données font l’objet de traitements automatisés fondés sur leur consentement ou sur un contrat (article 20 RGPD)&lt;/li&gt;
+&lt;li&gt;droit de définir le sort des données des Utilisateurs après leur mort et de choisir à qui &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; devra communiquer (ou non) ses données à un tiers qu’ils aura préalablement désigné&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Dès que &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; a connaissance du décès d’un Utilisateur et à défaut d’instructions de sa part, &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; s’engage à détruire ses données, sauf si leur conservation s’avère nécessaire à des fins probatoires ou pour répondre à une obligation légale.&lt;/p&gt;
+&lt;p&gt;Si l’Utilisateur souhaite savoir comment &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; utilise ses Données Personnelles, demander à les rectifier ou s’oppose à leur traitement, l’Utilisateur peut contacter &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; par écrit à l’adresse suivante :&lt;/p&gt;
+&lt;p&gt;Henri RASCOL – DPO, Henri RASCOL&lt;/p&gt;
+&lt;p&gt;8 allée Camille Saint-Saëns 91160 BALLAINVILLIERS.&lt;/p&gt;
+&lt;p&gt;Dans ce cas, l’Utilisateur doit indiquer les Données Personnelles qu’il souhaiterait que &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; corrige, mette à jour ou supprime, en s’identifiant précisément avec une copie d’une pièce d’identité (carte d’identité ou passeport).&lt;/p&gt;
+&lt;p&gt;Les demandes de suppression de Données Personnelles seront soumises aux obligations qui sont imposées à &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; par la loi, notamment en matière de conservation ou d’archivage des documents. Enfin, les Utilisateurs de &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; peuvent déposer une réclamation auprès des autorités de contrôle, et notamment de la CNIL (&lt;a class=&#34;link&#34; href=&#34;https://www.cnil.fr/fr/plaintes%29&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.cnil.fr/fr/plaintes)&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;74-non-communication-des-données-personnelles&#34;&gt;7.4 Non-communication des données personnelles&lt;/h3&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; s’interdit de traiter, héberger ou transférer les Informations collectées sur ses Clients vers un pays situé en dehors de l’Union européenne ou reconnu comme « non adéquat » par la Commission européenne sans en informer préalablement le client. Pour autant, &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; reste libre du choix de ses sous-traitants techniques et commerciaux à la condition qu’il présentent les garanties suffisantes au regard des exigences du Règlement Général sur la Protection des Données (RGPD : n° 2016-679).&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; s’engage à prendre toutes les précautions nécessaires afin de préserver la sécurité des Informations et notamment qu’elles ne soient pas communiquées à des personnes non autorisées. Cependant, si un incident impactant l’intégrité ou la confidentialité des Informations du Client est portée à la connaissance de &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt;, celle-ci devra dans les meilleurs délais informer le Client et lui communiquer les mesures de corrections prises. Par ailleurs &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; ne collecte aucune « données sensibles ».&lt;/p&gt;
+&lt;p&gt;Les Données Personnelles de l’Utilisateur peuvent être traitées par des filiales de &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; et des sous-traitants (prestataires de services), exclusivement afin de réaliser les finalités de la présente politique.&lt;/p&gt;
+&lt;p&gt;Dans la limite de leurs attributions respectives et pour les finalités rappelées ci-dessus, les principales personnes susceptibles d’avoir accès aux données des Utilisateurs de &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; sont principalement les agents de notre service client.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;8-notification-dincident&#34;&gt;8. Notification d’incident&lt;/h2&gt;
+&lt;p&gt;Quels que soient les efforts fournis, aucune méthode de transmission sur Internet et aucune méthode de stockage électronique n&amp;rsquo;est complètement sûre. Nous ne pouvons en conséquence pas garantir une sécurité absolue.
+Si nous prenions connaissance d&amp;rsquo;une brèche de la sécurité, nous avertirions les utilisateurs concernés afin qu&amp;rsquo;ils puissent prendre les mesures appropriées. Nos procédures de notification d’incident tiennent compte de nos obligations légales, qu&amp;rsquo;elles se situent au niveau national ou européen. Nous nous engageons à informer pleinement nos clients de toutes les questions relevant de la sécurité de leur compte et à leur fournir toutes les informations nécessaires pour les aider à respecter leurs propres obligations réglementaires en matière de reporting.&lt;/p&gt;
+&lt;p&gt;Aucune information personnelle de l&amp;rsquo;utilisateur du site &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; n&amp;rsquo;est publiée à l&amp;rsquo;insu de l&amp;rsquo;utilisateur, échangée, transférée, cédée ou vendue sur un support quelconque à des tiers. Seule l&amp;rsquo;hypothèse du rachat de &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; et de ses droits permettrait la transmission des dites informations à l&amp;rsquo;éventuel acquéreur qui serait à son tour tenu de la même obligation de conservation et de modification des données vis à vis de l&amp;rsquo;utilisateur du site &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;sécurité&#34;&gt;Sécurité&lt;/h3&gt;
+&lt;p&gt;Pour assurer la sécurité et la confidentialité des Données Personnelles et des Données Personnelles de Santé, &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; utilise des réseaux protégés par des dispositifs standards tels que par pare-feu, la pseudonymisation, l’encryption et mot de passe.&lt;/p&gt;
+&lt;p&gt;Lors du traitement des Données Personnelles, &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt;prend toutes les mesures raisonnables visant à les protéger contre toute perte, utilisation détournée, accès non autorisé, divulgation, altération ou destruction.&lt;/p&gt;
+&lt;h2 id=&#34;9-liens-hypertextes--cookies--et-balises-tags-internet&#34;&gt;9. Liens hypertextes « cookies » et balises (“tags”) internet&lt;/h2&gt;
+&lt;p&gt;Le site &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; contient un certain nombre de liens hypertextes vers d’autres sites, mis en place avec l’autorisation de &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt;. Cependant, &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; n’a pas la possibilité de vérifier le contenu des sites ainsi visités, et n’assumera en conséquence aucune responsabilité de ce fait.
+Sauf si vous décidez de désactiver les cookies, vous acceptez que le site puisse les utiliser. Vous pouvez à tout moment désactiver ces cookies et ce gratuitement à partir des possibilités de désactivation qui vous sont offertes et rappelées ci-après, sachant que cela peut réduire ou empêcher l’accessibilité à tout ou partie des Services proposés par le site.&lt;/p&gt;
+&lt;h3 id=&#34;91--cookies-&#34;&gt;9.1. « COOKIES »&lt;/h3&gt;
+&lt;p&gt;Un « cookie » est un petit fichier d’information envoyé sur le navigateur de l’Utilisateur et enregistré au sein du terminal de l’Utilisateur (ex : ordinateur, smartphone), (ci-après « Cookies »). Ce fichier comprend des informations telles que le nom de domaine de l’Utilisateur, le fournisseur d’accès Internet de l’Utilisateur, le système d’exploitation de l’Utilisateur, ainsi que la date et l’heure d’accès. Les Cookies ne risquent en aucun cas d’endommager le terminal de l’Utilisateur.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; est susceptible de traiter les informations de l’Utilisateur concernant sa visite du Site, telles que les pages consultées, les recherches effectuées. Ces informations permettent à &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; d’améliorer le contenu du Site, de la navigation de l’Utilisateur.&lt;/p&gt;
+&lt;p&gt;Les Cookies facilitant la navigation et/ou la fourniture des services proposés par le Site, l’Utilisateur peut configurer son navigateur pour qu’il lui permette de décider s’il souhaite ou non les accepter de manière à ce que des Cookies soient enregistrés dans le terminal ou, au contraire, qu’ils soient rejetés, soit systématiquement, soit selon leur émetteur. L’Utilisateur peut également configurer son logiciel de navigation de manière à ce que l’acceptation ou le refus des Cookies lui soient proposés ponctuellement, avant qu’un Cookie soit susceptible d’être enregistré dans son terminal. &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; informe l’Utilisateur que, dans ce cas, il se peut que les fonctionnalités de son logiciel de navigation ne soient pas toutes disponibles.&lt;/p&gt;
+&lt;p&gt;Si l’Utilisateur refuse l’enregistrement de Cookies dans son terminal ou son navigateur, ou si l’Utilisateur supprime ceux qui y sont enregistrés, l’Utilisateur est informé que sa navigation et son expérience sur le Site peuvent être limitées. Cela pourrait également être le cas lorsque &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; ou l’un de ses prestataires ne peut pas reconnaître, à des fins de compatibilité technique, le type de navigateur utilisé par le terminal, les paramètres de langue et d’affichage ou le pays depuis lequel le terminal semble connecté à Internet.&lt;/p&gt;
+&lt;p&gt;Le cas échéant, &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; décline toute responsabilité pour les conséquences liées au fonctionnement dégradé du Site et des services éventuellement proposés par &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt;, résultant (i) du refus de Cookies par l’Utilisateur (ii) de l’impossibilité pour &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; d’enregistrer ou de consulter les Cookies nécessaires à leur fonctionnement du fait du choix de l’Utilisateur. Pour la gestion des Cookies et des choix de l’Utilisateur, la configuration de chaque navigateur est différente. Elle est décrite dans le menu d’aide du navigateur, qui permettra de savoir de quelle manière l’Utilisateur peut modifier ses souhaits en matière de Cookies.&lt;/p&gt;
+&lt;p&gt;À tout moment, l’Utilisateur peut faire le choix d’exprimer et de modifier ses souhaits en matière de Cookies. &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; pourra en outre faire appel aux services de prestataires externes pour l’aider à recueillir et traiter les informations décrites dans cette section.&lt;/p&gt;
+&lt;p&gt;Enfin, en cliquant sur les icônes dédiées aux réseaux sociaux Twitter, Facebook, Linkedin et Google Plus figurant sur le Site de &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; ou dans son application mobile et si l’Utilisateur a accepté le dépôt de cookies en poursuivant sa navigation sur le Site Internet ou l’application mobile de &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt;, Twitter, Facebook, Linkedin et Google Plus peuvent également déposer des cookies sur vos terminaux (ordinateur, tablette, téléphone portable).&lt;/p&gt;
+&lt;p&gt;Ces types de cookies ne sont déposés sur vos terminaux qu’à condition que vous y consentiez, en continuant votre navigation sur le Site Internet ou l’application mobile de &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt;. À tout moment, l’Utilisateur peut néanmoins revenir sur son consentement à ce que &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; dépose ce type de cookies.&lt;/p&gt;
+&lt;h3 id=&#34;article-92-balises-tags-internet&#34;&gt;Article 9.2. BALISES (“TAGS”) INTERNET&lt;/h3&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; peut employer occasionnellement des balises Internet (également appelées « tags », ou balises d’action, GIF à un pixel, GIF transparents, GIF invisibles et GIF un à un) et les déployer par l’intermédiaire d’un partenaire spécialiste d’analyses Web susceptible de se trouver (et donc de stocker les informations correspondantes, y compris l’adresse IP de l’Utilisateur) dans un pays étranger.&lt;/p&gt;
+&lt;p&gt;Ces balises sont placées à la fois dans les publicités en ligne permettant aux internautes d’accéder au Site, et sur les différentes pages de celui-ci.&lt;/p&gt;
+&lt;p&gt;Cette technologie permet à &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; d’évaluer les réponses des visiteurs face au Site et l’efficacité de ses actions (par exemple, le nombre de fois où une page est ouverte et les informations consultées), ainsi que l’utilisation de ce Site par l’Utilisateur.&lt;/p&gt;
+&lt;p&gt;Le prestataire externe pourra éventuellement recueillir des informations sur les visiteurs du Site et d’autres sites Internet grâce à ces balises, constituer des rapports sur l’activité du Site à l’attention de &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt;, et fournir d’autres services relatifs à l’utilisation de celui-ci et d’Internet.&lt;/p&gt;
+&lt;h2 id=&#34;10-droit-applicable-et-attribution-de-juridiction&#34;&gt;10. Droit applicable et attribution de juridiction&lt;/h2&gt;
+&lt;p&gt;Tout litige en relation avec l’utilisation du site &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud-Guru, le Blog&lt;/a&gt; est soumis au droit français.
+En dehors des cas où la loi ne le permet pas, il est fait attribution exclusive de juridiction aux tribunaux compétents de Evry.&lt;/p&gt;
 </description>
+        </item>
+        <item>
+        <title>A propos</title>
+        <link>http://isibox.github.io/page/about/</link>
+        <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
+        
+        <guid>http://isibox.github.io/page/about/</guid>
+        <description>&lt;img src="http://isibox.github.io/page/about/blog.jpg" alt="Featured image of post A propos" /&gt;&lt;p&gt;Bienvenue sur &lt;strong&gt;Cloud-Guru, le Blog&lt;/strong&gt; !&lt;/p&gt;
+&lt;h2 id=&#34;présentation-très-générale&#34;&gt;Présentation (très) générale&lt;/h2&gt;
+&lt;p&gt;Cela fait bien longtemps que j&amp;rsquo;aurais du démarrer ce blog; bien longtemps&amp;hellip; Mais ne dit-on pas : &lt;em&gt;&lt;strong&gt;Il n&amp;rsquo;est jamais trop tard pour commencer&lt;/strong&gt;&lt;/em&gt; ? Alors, voilà, je m&amp;rsquo;y mets et j&amp;rsquo;espère le faire avec sérieux (je parle ici de régularité), mais surtout avec enthousiasme. Sérieusement, oui, mais sans se prendre au sérieux, justement. Cela est et devra rester un plaisir.&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;objectif de &lt;strong&gt;Cloud-Guru, le Blog&lt;/strong&gt; est de partager mes connaissances dans le domaine du &lt;em&gt;&lt;strong&gt;Cloud&lt;/strong&gt;&lt;/em&gt;, mais aussi sur de nombreux autres domaines parmi ceux listés ci-dessous :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Architectures&lt;/em&gt;, &lt;em&gt;Infrastructures&lt;/em&gt; et &lt;em&gt;Urbanismes&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Azure&lt;/em&gt;, &lt;em&gt;GCP&lt;/em&gt; et d&amp;rsquo;autres &lt;em&gt;Cloud Public&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Méthodes Agiles&lt;/em&gt;, &lt;em&gt;approches DevSecOps&lt;/em&gt; et &lt;em&gt;SRE&lt;/em&gt; et bien d&amp;rsquo;autres concepts du même ordre&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Git&lt;/em&gt;, &lt;em&gt;pipelines&lt;/em&gt;, &lt;em&gt;CICD&lt;/em&gt; et de nombreux sujets qui s&amp;rsquo;y rapportent.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Azure DevOps Wiki&lt;/em&gt;, &lt;em&gt;Board&lt;/em&gt;, &lt;em&gt;Repos&lt;/em&gt;, &lt;em&gt;Pipelines&lt;/em&gt; et plus si affinités.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;IaC&lt;/em&gt;, &lt;em&gt;Terraform&lt;/em&gt;, &lt;em&gt;Azure Bicep&lt;/em&gt; et de nombreux outils de tests, de qualité de code ou autres joyeusetés.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Templating Handlebars&lt;/em&gt; et son utilisation dans le monde de l&amp;rsquo;IaC, des systèmes et de l&amp;rsquo;IT au sens large.&lt;/li&gt;
+&lt;li&gt;La sécurité. Elle est nécessaire partout. &lt;strong&gt;By design&lt;/strong&gt; comme disent nos amis outre-atlantique où outre-manche.&lt;/li&gt;
+&lt;li&gt;Et bien d&amp;rsquo;autres, à venir, je pense. 😛&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;créer-un-démonstrateur-comme-fil-conducteur&#34;&gt;Créer un démonstrateur comme fil conducteur&lt;/h2&gt;
+&lt;p&gt;L&amp;rsquo;idée, qui me motive sur la publicaton régulière d&amp;rsquo;articles sur ce blog, est de présenter des exemples réalistes correspondants à l&amp;rsquo;implémentation d&amp;rsquo;un &lt;em&gt;&lt;strong&gt;démonstrateur&lt;/strong&gt;&lt;/em&gt; dans les clouds &lt;em&gt;&lt;strong&gt;Azure&lt;/strong&gt;&lt;/em&gt; et &lt;em&gt;&lt;strong&gt;GCP&lt;/strong&gt;&lt;/em&gt; (que je connais bien), mais aussi sur le cloud &lt;em&gt;&lt;strong&gt;AWS&lt;/strong&gt;&lt;/em&gt; (que je n&amp;rsquo;ai jamais implémenté en production).&lt;/p&gt;
+&lt;p&gt;Vous pouvez découvrir ce &lt;em&gt;&lt;strong&gt;démonstrateur&lt;/strong&gt;&lt;/em&gt; en suivant ce &lt;a class=&#34;link&#34; href=&#34;../starthere/&#34; &gt;lien&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;qui-suis-je-&#34;&gt;Qui suis-je ?&lt;/h2&gt;
+&lt;p&gt;Bientôt disponible.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Archives</title>
+        <link>http://isibox.github.io/page/archives/</link>
+        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+        
+        <guid>http://isibox.github.io/page/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Recherche</title>
+        <link>http://isibox.github.io/page/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>http://isibox.github.io/page/search/</guid>
+        <description></description>
         </item>
         
     </channel>
