@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Cloud-Guru, le Blog</title>
-        <link>http://isibox.github.io/</link>
+        <link>http://blog.cloud-guru.io/</link>
         <description>Recent content on Cloud-Guru, le Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 07 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://isibox.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 07 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://blog.cloud-guru.io/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Démarrez ici !</title>
-        <link>http://isibox.github.io/page/start/</link>
+        <link>http://blog.cloud-guru.io/page/start/</link>
         <pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate>
         
-        <guid>http://isibox.github.io/page/start/</guid>
-        <description>&lt;img src="http://isibox.github.io/page/start/start-here.jpg" alt="Featured image of post Démarrez ici !" /&gt;&lt;p&gt;Bientôt disponible.&lt;/p&gt;
+        <guid>http://blog.cloud-guru.io/page/start/</guid>
+        <description>&lt;img src="http://blog.cloud-guru.io/page/start/the-adventure-begins.jpg" alt="Featured image of post Démarrez ici !" /&gt;&lt;p&gt;Bientôt disponible.&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>Mentions légales</title>
-        <link>http://isibox.github.io/page/legal/</link>
+        <link>http://blog.cloud-guru.io/page/legal/</link>
         <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
         
-        <guid>http://isibox.github.io/page/legal/</guid>
+        <guid>http://blog.cloud-guru.io/page/legal/</guid>
         <description>&lt;h2 id=&#34;définitions&#34;&gt;Définitions&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Client :&lt;/strong&gt; tout professionnel ou personne physique capable au sens des articles 1123 et suivants du Code civil, ou personne morale, qui visite le Site objet des présentes conditions générales.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Prestations et Services :&lt;/strong&gt; &lt;a class=&#34;link&#34; href=&#34;https://blog.cloud-guru.io&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -207,11 +207,11 @@ En dehors des cas où la loi ne le permet pas, il est fait attribution exclusive
         </item>
         <item>
         <title>A propos</title>
-        <link>http://isibox.github.io/page/about/</link>
+        <link>http://blog.cloud-guru.io/page/about/</link>
         <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
         
-        <guid>http://isibox.github.io/page/about/</guid>
-        <description>&lt;img src="http://isibox.github.io/page/about/blog.jpg" alt="Featured image of post A propos" /&gt;&lt;p&gt;Bienvenue sur &lt;strong&gt;Cloud-Guru, le Blog&lt;/strong&gt; !&lt;/p&gt;
+        <guid>http://blog.cloud-guru.io/page/about/</guid>
+        <description>&lt;img src="http://blog.cloud-guru.io/page/about/blog.jpg" alt="Featured image of post A propos" /&gt;&lt;p&gt;Bienvenue sur &lt;strong&gt;Cloud-Guru, le Blog&lt;/strong&gt; !&lt;/p&gt;
 &lt;h2 id=&#34;présentation-très-générale&#34;&gt;Présentation (très) générale&lt;/h2&gt;
 &lt;p&gt;Cela fait bien longtemps que j&amp;rsquo;aurais du démarrer ce blog; bien longtemps&amp;hellip; Mais ne dit-on pas : &lt;em&gt;&lt;strong&gt;Il n&amp;rsquo;est jamais trop tard pour commencer&lt;/strong&gt;&lt;/em&gt; ? Alors, voilà, je m&amp;rsquo;y mets et j&amp;rsquo;espère le faire avec sérieux (je parle ici de régularité), mais surtout avec enthousiasme. Sérieusement, oui, mais sans se prendre au sérieux, justement. Cela est et devra rester un plaisir.&lt;/p&gt;
 &lt;p&gt;L&amp;rsquo;objectif de &lt;strong&gt;Cloud-Guru, le Blog&lt;/strong&gt; est de partager mes connaissances dans le domaine du &lt;em&gt;&lt;strong&gt;Cloud&lt;/strong&gt;&lt;/em&gt;, mais aussi sur de nombreux autres domaines parmi ceux listés ci-dessous :&lt;/p&gt;
@@ -235,18 +235,18 @@ En dehors des cas où la loi ne le permet pas, il est fait attribution exclusive
         </item>
         <item>
         <title>Archives</title>
-        <link>http://isibox.github.io/page/archives/</link>
+        <link>http://blog.cloud-guru.io/page/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://isibox.github.io/page/archives/</guid>
+        <guid>http://blog.cloud-guru.io/page/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>Recherche</title>
-        <link>http://isibox.github.io/page/search/</link>
+        <link>http://blog.cloud-guru.io/page/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://isibox.github.io/page/search/</guid>
+        <guid>http://blog.cloud-guru.io/page/search/</guid>
         <description></description>
         </item>
         

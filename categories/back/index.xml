@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Back on Cloud-Guru, le Blog</title>
-        <link>http://isibox.github.io/categories/back/</link>
+        <link>http://blog.cloud-guru.io/categories/back/</link>
         <description>Recent content in Back on Cloud-Guru, le Blog</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language><atom:link href="http://isibox.github.io/categories/back/index.xml" rel="self" type="application/rss+xml" />
+        <language>en-us</language><atom:link href="http://blog.cloud-guru.io/categories/back/index.xml" rel="self" type="application/rss+xml" />
     </channel>
 </rss>

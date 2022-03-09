@@ -2,42 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://isibox.github.io/</loc>
+    <loc>http://blog.cloud-guru.io/</loc>
     <lastmod>2022-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://isibox.github.io/page/start/</loc>
+    <loc>http://blog.cloud-guru.io/page/start/</loc>
     <lastmod>2022-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://isibox.github.io/page/</loc>
+    <loc>http://blog.cloud-guru.io/page/</loc>
     <lastmod>2022-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://isibox.github.io/page/legal/</loc>
+    <loc>http://blog.cloud-guru.io/page/legal/</loc>
     <lastmod>2022-03-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://isibox.github.io/page/about/</loc>
+    <loc>http://blog.cloud-guru.io/page/about/</loc>
     <lastmod>2022-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://isibox.github.io/page/archives/</loc>
+    <loc>http://blog.cloud-guru.io/page/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://isibox.github.io/categories/archi/</loc>
+    <loc>http://blog.cloud-guru.io/categories/archi/</loc>
   </url><url>
-    <loc>http://isibox.github.io/categories/back/</loc>
+    <loc>http://blog.cloud-guru.io/categories/back/</loc>
   </url><url>
-    <loc>http://isibox.github.io/categories/</loc>
+    <loc>http://blog.cloud-guru.io/categories/</loc>
   </url><url>
-    <loc>http://isibox.github.io/categories/cloud/</loc>
+    <loc>http://blog.cloud-guru.io/categories/cloud/</loc>
   </url><url>
-    <loc>http://isibox.github.io/categories/code/</loc>
+    <loc>http://blog.cloud-guru.io/categories/code/</loc>
   </url><url>
-    <loc>http://isibox.github.io/categories/front/</loc>
+    <loc>http://blog.cloud-guru.io/categories/front/</loc>
   </url><url>
-    <loc>http://isibox.github.io/categories/iac/</loc>
+    <loc>http://blog.cloud-guru.io/categories/iac/</loc>
   </url><url>
-    <loc>http://isibox.github.io/categories/network/</loc>
+    <loc>http://blog.cloud-guru.io/categories/network/</loc>
   </url><url>
-    <loc>http://isibox.github.io/page/search/</loc>
+    <loc>http://blog.cloud-guru.io/page/search/</loc>
   </url><url>
-    <loc>http://isibox.github.io/tags/</loc>
+    <loc>http://blog.cloud-guru.io/tags/</loc>
   </url>
 </urlset>
