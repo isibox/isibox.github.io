@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on Cloud-Guru, le Blog</title>
-        <link>http://blog.cloud-guru.io/post/</link>
+        <link>https://blog.cloud-guru.io/post/</link>
         <description>Recent content in Posts on Cloud-Guru, le Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 26 Feb 2020 15:18:53 +0100</lastBuildDate><atom:link href="http://blog.cloud-guru.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 26 Feb 2020 15:18:53 +0100</lastBuildDate><atom:link href="https://blog.cloud-guru.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>My First Post</title>
-        <link>http://blog.cloud-guru.io/post/my-first-post/</link>
+        <link>https://blog.cloud-guru.io/post/my-first-post/</link>
         <pubDate>Wed, 26 Feb 2020 15:18:53 +0100</pubDate>
         
-        <guid>http://blog.cloud-guru.io/post/my-first-post/</guid>
-        <description>&lt;img src="http://blog.cloud-guru.io/img/Your-First-Blog-Post-1024x576.jpeg" alt="Featured image of post My First Post" /&gt;&lt;p&gt;A simple example of bash block code:&lt;/p&gt;
+        <guid>https://blog.cloud-guru.io/post/my-first-post/</guid>
+        <description>&lt;img src="https://blog.cloud-guru.io/img/Your-First-Blog-Post-1024x576.jpeg" alt="Featured image of post My First Post" /&gt;&lt;p&gt;A simple example of bash block code:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#24909d&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;Date: &lt;/span&gt;&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;$(&lt;/span&gt;date&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;&lt;/span&gt;
 &lt;span style=&#34;color:#24909d&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;My first post with hugo&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;An another example of terraform block code:&lt;/p&gt;
