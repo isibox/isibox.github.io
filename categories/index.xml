@@ -5,13 +5,30 @@
         <link>http://blog.cloud-guru.io/categories/</link>
         <description>Recent content in Categories on Cloud-Guru, le Blog</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language><atom:link href="http://blog.cloud-guru.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 26 Feb 2020 15:18:53 +0100</lastBuildDate><atom:link href="http://blog.cloud-guru.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Archi</title>
         <link>http://blog.cloud-guru.io/categories/archi/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <pubDate>Wed, 26 Feb 2020 15:18:53 +0100</pubDate>
         
         <guid>http://blog.cloud-guru.io/categories/archi/</guid>
         <description>&lt;img src="http://blog.cloud-guru.io/categories/archi/architecture.jpg" alt="Featured image of post Archi" /&gt;</description>
+        </item>
+        <item>
+        <title>Code</title>
+        <link>http://blog.cloud-guru.io/categories/code/</link>
+        <pubDate>Wed, 26 Feb 2020 15:18:53 +0100</pubDate>
+        
+        <guid>http://blog.cloud-guru.io/categories/code/</guid>
+        <description>&lt;img src="http://blog.cloud-guru.io/categories/code/coding.jpg" alt="Featured image of post Code" /&gt;</description>
+        </item>
+        <item>
+        <title>IaC</title>
+        <link>http://blog.cloud-guru.io/categories/iac/</link>
+        <pubDate>Wed, 26 Feb 2020 15:18:53 +0100</pubDate>
+        
+        <guid>http://blog.cloud-guru.io/categories/iac/</guid>
+        <description>&lt;img src="http://blog.cloud-guru.io/categories/iac/iac.jpg" alt="Featured image of post IaC" /&gt;</description>
         </item>
         <item>
         <title>Back</title>
@@ -30,28 +47,12 @@
         <description>&lt;img src="http://blog.cloud-guru.io/categories/cloud/cloud.jpg" alt="Featured image of post Cloud" /&gt;</description>
         </item>
         <item>
-        <title>Code</title>
-        <link>http://blog.cloud-guru.io/categories/code/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>http://blog.cloud-guru.io/categories/code/</guid>
-        <description>&lt;img src="http://blog.cloud-guru.io/categories/code/coding.jpg" alt="Featured image of post Code" /&gt;</description>
-        </item>
-        <item>
         <title>Front</title>
         <link>http://blog.cloud-guru.io/categories/front/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>http://blog.cloud-guru.io/categories/front/</guid>
         <description>&lt;img src="http://blog.cloud-guru.io/categories/front/frontend.jpg" alt="Featured image of post Front" /&gt;</description>
-        </item>
-        <item>
-        <title>IaC</title>
-        <link>http://blog.cloud-guru.io/categories/iac/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>http://blog.cloud-guru.io/categories/iac/</guid>
-        <description>&lt;img src="http://blog.cloud-guru.io/categories/iac/iac.jpg" alt="Featured image of post IaC" /&gt;</description>
         </item>
         <item>
         <title>Network</title>
