@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Cloud-Guru, le Blog</title>
-        <link>https://blog.cloud-guru.io/</link>
-        <description>Recent content on Cloud-Guru, le Blog</description>
+        <title>Homes on Cloud-Guru, le Blog</title>
+        <link>https://blog.cloud-guru.io/home/</link>
+        <description>Recent content in Homes on Cloud-Guru, le Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>This work is licensed under a CC BY-NC-SA 4.0 International License.</copyright>
-        <lastBuildDate>Mon, 07 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.cloud-guru.io/index.xml" rel="self" type="application/rss+xml" />
+        <lastBuildDate>Mon, 07 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.cloud-guru.io/home/index.xml" rel="self" type="application/rss+xml" />
         <item>
         <title>Démarrez ici !</title>
         <link>https://blog.cloud-guru.io/home/start/</link>
@@ -33,40 +33,6 @@
 &lt;p&gt;L&amp;rsquo;idée, qui me motive sur la publicaton régulière d&amp;rsquo;articles sur ce blog, est de présenter des exemples réalistes correspondants à l&amp;rsquo;implémentation d&amp;rsquo;un &lt;em&gt;&lt;strong&gt;démonstrateur&lt;/strong&gt;&lt;/em&gt; dans les clouds &lt;em&gt;&lt;strong&gt;Azure&lt;/strong&gt;&lt;/em&gt; et &lt;em&gt;&lt;strong&gt;GCP&lt;/strong&gt;&lt;/em&gt; (que je connais bien), mais aussi sur le cloud &lt;em&gt;&lt;strong&gt;AWS&lt;/strong&gt;&lt;/em&gt; (que je n&amp;rsquo;ai jamais implémenté en production).&lt;/p&gt;
 </description>
         </item>
-        
-        
-        
-        
-        
-        
-        <item>
-        <title>My First Post</title>
-        <link>https://blog.cloud-guru.io/post/my-first-post/</link>
-        <pubDate>Sat, 26 Feb 2022 15:18:53 +0100</pubDate>
-        
-        <guid>https://blog.cloud-guru.io/post/my-first-post/</guid>
-        <description>&lt;img src="https://blog.cloud-guru.io/img/yes-we-can.jpg" alt="Featured image of post My First Post" /&gt;&lt;p&gt;A simple example of bash block code:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#24909d&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;Date: &lt;/span&gt;&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;$(&lt;/span&gt;date&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#24909d&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;My first post with hugo&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;An another example of terraform block code:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-terraform&#34; data-lang=&#34;terraform&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;resource&lt;/span&gt; &lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;a_resource&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;my_resource_name&amp;#34;&lt;/span&gt; {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#bbb&#34;&gt;key&lt;/span&gt; = &lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;value&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#bbb&#34;&gt;anotherkey&lt;/span&gt; = &lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;another value&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And finally, a graph with mermaid description:&lt;/p&gt;
-&lt;div class=&#34;mermaid&#34;&gt;graph LR
-  A--&gt;B
-  A--&gt;C
-  B--&gt;D
-  C--&gt;D
-&lt;/div&gt;
-
-</description>
-        </item>
-        
-        
-        
-        
         
         
     </channel>
