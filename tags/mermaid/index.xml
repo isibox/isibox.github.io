@@ -10,10 +10,10 @@
         <lastBuildDate>Sat, 26 Feb 2022 15:18:53 +0100</lastBuildDate><atom:link href="https://blog.cloud-guru.io/tags/mermaid/index.xml" rel="self" type="application/rss+xml" />
         <item>
         <title>My First Post</title>
-        <link>https://blog.cloud-guru.io/post/my-first-post/</link>
+        <link>https://blog.cloud-guru.io/p/my-first-post/</link>
         <pubDate>Sat, 26 Feb 2022 15:18:53 +0100</pubDate>
         
-        <guid>https://blog.cloud-guru.io/post/my-first-post/</guid>
+        <guid>https://blog.cloud-guru.io/p/my-first-post/</guid>
         <description>&lt;img src="https://blog.cloud-guru.io/img/yes-we-can.jpg" alt="Featured image of post My First Post" /&gt;&lt;p&gt;A simple example of bash block code:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#24909d&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;Date: &lt;/span&gt;&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;$(&lt;/span&gt;date&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#24909d&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;My first post with hugo&amp;#34;&lt;/span&gt;
