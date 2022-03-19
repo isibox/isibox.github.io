@@ -7,22 +7,40 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>This work is licensed under a CC BY-NC-SA 4.0 International License.</copyright>
-        <lastBuildDate>Sat, 26 Feb 2022 15:18:53 +0100</lastBuildDate><atom:link href="https://blog.cloud-guru.io/categories/code/index.xml" rel="self" type="application/rss+xml" />
+        <lastBuildDate>Sat, 26 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.cloud-guru.io/categories/code/index.xml" rel="self" type="application/rss+xml" />
         <item>
-        <title>My First Post</title>
-        <link>https://blog.cloud-guru.io/p/my-first-post/</link>
-        <pubDate>Sat, 26 Feb 2022 15:18:53 +0100</pubDate>
+        <title>Mon Premier Article</title>
+        <link>https://blog.cloud-guru.io/p/mon-premier-article/</link>
+        <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://blog.cloud-guru.io/p/my-first-post/</guid>
-        <description>&lt;img src="https://blog.cloud-guru.io/img/yes-we-can.jpg" alt="Featured image of post My First Post" /&gt;&lt;p&gt;A simple example of bash block code:&lt;/p&gt;
+        <guid>https://blog.cloud-guru.io/p/mon-premier-article/</guid>
+        <description>&lt;img src="https://blog.cloud-guru.io/p/mon-premier-article/my-first-post.jpg" alt="Featured image of post Mon Premier Article" /&gt;&lt;blockquote&gt;
+&lt;p&gt;J&amp;rsquo;utiliserais ce premier article pour montrer ce qu&amp;rsquo;il est possible de publier &lt;em&gt;&lt;strong&gt;simplement&lt;/strong&gt;&lt;/em&gt; avec &lt;strong&gt;HUGO&lt;/strong&gt; en &lt;em&gt;&lt;strong&gt;markdown&lt;/strong&gt;&lt;/em&gt;.&lt;br&gt;
+Celui sera donc amené à être mis à jour régulièrement&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;des-meta-données-pour-le-header-de-larticle&#34;&gt;Des meta-données pour le &lt;em&gt;&lt;strong&gt;header&lt;/strong&gt;&lt;/em&gt; de l&amp;rsquo;article&lt;/h2&gt;
+&lt;p&gt;Ces méta-données sont directement définies en haut de cette article dans le fichier markdown.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#447fcf;text-decoration:underline&#34;&gt;---&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#666&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#999;font-style:italic&#34;&gt;# draft: true&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#666&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;image&lt;/span&gt;:&lt;span style=&#34;color:#666&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;my-first-post.jpg&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#666&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;title&lt;/span&gt;:&lt;span style=&#34;color:#666&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;Mon Premier Article&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#666&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;date&lt;/span&gt;:&lt;span style=&#34;color:#666&#34;&gt; &lt;/span&gt;2022-02-26&lt;span style=&#34;color:#666&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#666&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;categories&lt;/span&gt;:&lt;span style=&#34;color:#666&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#666&#34;&gt;  &lt;/span&gt;- IaC&lt;span style=&#34;color:#666&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#666&#34;&gt;  &lt;/span&gt;- Archi&lt;span style=&#34;color:#666&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#666&#34;&gt;  &lt;/span&gt;- Code&lt;span style=&#34;color:#666&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#666&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#999;font-style:italic&#34;&gt;# ...&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Le résultat est visible tput en haut.&lt;/p&gt;
+&lt;h2 id=&#34;publier-du-code-code-block-avec-hugo&#34;&gt;Publier du code (code block) avec HUGO&lt;/h2&gt;
+&lt;p&gt;Un premier exemple simple pour du &lt;em&gt;&lt;strong&gt;bash&lt;/strong&gt;&lt;/em&gt; :&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#24909d&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;Date: &lt;/span&gt;&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;$(&lt;/span&gt;date&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#24909d&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;My first post with hugo&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;An another example of terraform block code:&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#24909d&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;Mon premier article avec Hugo !&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Un autre exemple pour du &lt;em&gt;&lt;strong&gt;terraform&lt;/strong&gt;&lt;/em&gt; :&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-terraform&#34; data-lang=&#34;terraform&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;resource&lt;/span&gt; &lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;a_resource&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;my_resource_name&amp;#34;&lt;/span&gt; {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#bbb&#34;&gt;key&lt;/span&gt; = &lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;value&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#bbb&#34;&gt;anotherkey&lt;/span&gt; = &lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;another value&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And finally, a graph with mermaid description:&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Et enfin utiliser un &lt;em&gt;&lt;strong&gt;Code Block&lt;/strong&gt;&lt;/em&gt; avec *&lt;strong&gt;mermaid&lt;/strong&gt; pour dessiner un petit graphe :&lt;/p&gt;
 &lt;div class=&#34;mermaid&#34;&gt;graph LR
   A--&gt;B
   A--&gt;C
@@ -30,6 +48,16 @@
   C--&gt;D
 &lt;/div&gt;
 
+&lt;h2 id=&#34;dautres-meta-données-pour-le-footer-de-larticle&#34;&gt;D&amp;rsquo;autres meta-données pour le &lt;em&gt;&lt;strong&gt;footer&lt;/strong&gt;&lt;/em&gt; de l&amp;rsquo;article&lt;/h2&gt;
+&lt;p&gt;Ces méta-données sont directement définies en haut de cette article dans le fichier markdown.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#999;font-style:italic&#34;&gt;# ...&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#666&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;tags&lt;/span&gt;:&lt;span style=&#34;color:#666&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#666&#34;&gt;  &lt;/span&gt;- code blocks&lt;span style=&#34;color:#666&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#666&#34;&gt;  &lt;/span&gt;- mermaid&lt;span style=&#34;color:#666&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#666&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#999;font-style:italic&#34;&gt;#licence: Sous une licence spécifique &lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#666&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;lastmod&lt;/span&gt;:&lt;span style=&#34;color:#666&#34;&gt; &lt;/span&gt;2022-03-19&lt;span style=&#34;color:#666&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#666&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#447fcf;text-decoration:underline&#34;&gt;---&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Le résultat est visible ci-dessous.&lt;/p&gt;
 </description>
         </item>
         

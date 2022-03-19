@@ -3,64 +3,63 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.cloud-guru.io/</loc>
-    <lastmod>2022-03-18T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.cloud-guru.io/d%C3%A9marrez-ici/</loc>
     <lastmod>2022-03-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.cloud-guru.io/home/</loc>
-    <lastmod>2022-03-18T00:00:00+00:00</lastmod>
+    <loc>https://blog.cloud-guru.io/page/</loc>
+    <lastmod>2022-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.cloud-guru.io/page/legal/</loc>
+    <loc>https://blog.cloud-guru.io/mentions-l%C3%A9gales/</loc>
     <lastmod>2022-03-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.cloud-guru.io/page/</loc>
-    <lastmod>2022-03-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.cloud-guru.io/page/about/</loc>
-    <lastmod>2022-03-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.cloud-guru.io/categories/archi/</loc>
-    <lastmod>2022-02-26T15:18:53+01:00</lastmod>
+    <loc>https://blog.cloud-guru.io/contact/</loc>
+    <lastmod>2022-03-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.cloud-guru.io/categories/</loc>
-    <lastmod>2022-02-26T15:18:53+01:00</lastmod>
+    <lastmod>2022-03-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.cloud-guru.io/categories/code/</loc>
-    <lastmod>2022-02-26T15:18:53+01:00</lastmod>
+    <lastmod>2022-03-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.cloud-guru.io/tags/code-blocks/</loc>
-    <lastmod>2022-02-26T15:18:53+01:00</lastmod>
+    <lastmod>2022-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.cloud-guru.io/categories/iac/</loc>
-    <lastmod>2022-02-26T15:18:53+01:00</lastmod>
+    <loc>https://blog.cloud-guru.io/categories/front/</loc>
+    <lastmod>2022-03-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.cloud-guru.io/tags/hugo/</loc>
+    <lastmod>2022-03-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.cloud-guru.io/categories/it/</loc>
+    <lastmod>2022-03-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.cloud-guru.io/tags/mermaid/</loc>
-    <lastmod>2022-02-26T15:18:53+01:00</lastmod>
+    <lastmod>2022-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.cloud-guru.io/p/my-first-post/</loc>
-    <lastmod>2022-02-26T15:18:53+01:00</lastmod>
+    <loc>https://blog.cloud-guru.io/p/mon-premier-article/</loc>
+    <lastmod>2022-03-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.cloud-guru.io/post/</loc>
-    <lastmod>2022-02-26T15:18:53+01:00</lastmod>
-  </url><url>
-    <loc>https://blog.cloud-guru.io/tags/shortcodes/</loc>
-    <lastmod>2022-02-26T15:18:53+01:00</lastmod>
+    <lastmod>2022-03-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.cloud-guru.io/tags/</loc>
-    <lastmod>2022-02-26T15:18:53+01:00</lastmod>
+    <lastmod>2022-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.cloud-guru.io/page/archives/</loc>
+    <loc>https://blog.cloud-guru.io/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.cloud-guru.io/categories/archi/</loc>
   </url><url>
     <loc>https://blog.cloud-guru.io/categories/back/</loc>
   </url><url>
     <loc>https://blog.cloud-guru.io/categories/cloud/</loc>
   </url><url>
-    <loc>https://blog.cloud-guru.io/categories/front/</loc>
+    <loc>https://blog.cloud-guru.io/categories/iac/</loc>
   </url><url>
     <loc>https://blog.cloud-guru.io/categories/network/</loc>
   </url><url>
-    <loc>https://blog.cloud-guru.io/page/search/</loc>
+    <loc>https://blog.cloud-guru.io/search/</loc>
   </url>
 </urlset>
