@@ -140,10 +140,11 @@
 &lt;/table&gt;
 &lt;h3 id=&#34;environnement-de-dev-standard&#34;&gt;Environnement de DEV standard&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Si l&amp;rsquo;on souhaite définir, un environnement de DEV standard, une très bonne solution est de le faire depuis un container comportant l&amp;rsquo;ensemble des outils nécessaires et suffisants. Avec une image, il est ainsi très facile de faire en sorte qu&amp;rsquo;une équipe de DEV travaille avec le même environnement correspondant à celui de production.&lt;/p&gt;
+&lt;p&gt;Si l&amp;rsquo;on souhaite définir, un environnement de DEV standard, une solution simple est de le faire depuis un container comportant l&amp;rsquo;ensemble des outils nécessaires et suffisants. Avec une image, il est ainsi très facile de faire en sorte qu&amp;rsquo;une équipe de DEV travaille avec le même environnement correspondant à celui de production.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;et-ensuite-&#34;&gt;Et ensuite ?&lt;/h2&gt;
-&lt;p&gt;Et, bien, il ne me reste plus qu&amp;rsquo;a me mettre au travail. Rendez-vous sur des prochains articles à suivre&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Et, bien, il ne me reste plus qu&amp;rsquo;a me mettre au travail. Rendez-vous sur les premiers articles à suivre&amp;hellip;&lt;br&gt;
+Abonnez-vous sur le flux RSS du Blog.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://blog.cloud-guru.io/img/lets-get-started.jpg&#34;
 	
 	

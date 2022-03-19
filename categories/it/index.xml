@@ -15,11 +15,11 @@
         
         <guid>https://blog.cloud-guru.io/p/mon-premier-article/</guid>
         <description>&lt;img src="https://blog.cloud-guru.io/p/mon-premier-article/my-first-post.jpg" alt="Featured image of post Mon Premier Article" /&gt;&lt;blockquote&gt;
-&lt;p&gt;J&amp;rsquo;utiliserais ce premier article pour montrer ce qu&amp;rsquo;il est possible de publier &lt;em&gt;&lt;strong&gt;simplement&lt;/strong&gt;&lt;/em&gt; avec &lt;strong&gt;HUGO&lt;/strong&gt; en &lt;em&gt;&lt;strong&gt;markdown&lt;/strong&gt;&lt;/em&gt;.&lt;br&gt;
-Celui sera donc amené à être mis à jour régulièrement&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Il est facile de publier un article depuis un fichier &lt;em&gt;&lt;strong&gt;markdown&lt;/strong&gt;&lt;/em&gt; avec &lt;strong&gt;Hugo&lt;/strong&gt;.&lt;br&gt;
+Celui-ci est un simple exemple de ce qu&amp;rsquo;il est possible de faire. Il ne s&amp;rsquo;agit pas d&amp;rsquo;un tutoriel sur &lt;strong&gt;Hugo&lt;/strong&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;des-meta-données-pour-le-header-de-larticle&#34;&gt;Des meta-données pour le &lt;em&gt;&lt;strong&gt;header&lt;/strong&gt;&lt;/em&gt; de l&amp;rsquo;article&lt;/h2&gt;
-&lt;p&gt;Ces méta-données sont directement définies en haut de cette article dans le fichier markdown.&lt;/p&gt;
+&lt;p&gt;Ces méta-données sont directement définies dans le haut du fichier &lt;em&gt;&lt;strong&gt;markdown&lt;/strong&gt;&lt;/em&gt; de cet article.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#447fcf;text-decoration:underline&#34;&gt;---&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#666&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#999;font-style:italic&#34;&gt;# draft: true&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#666&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;image&lt;/span&gt;:&lt;span style=&#34;color:#666&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;my-first-post.jpg&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;
@@ -30,7 +30,7 @@ Celui sera donc amené à être mis à jour régulièrement&amp;hellip;&lt;/p&gt
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#666&#34;&gt;  &lt;/span&gt;- Archi&lt;span style=&#34;color:#666&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#666&#34;&gt;  &lt;/span&gt;- Code&lt;span style=&#34;color:#666&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#666&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#999;font-style:italic&#34;&gt;# ...&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Le résultat est visible tput en haut.&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Le résultat est visible avant le début de l&amp;rsquo;article.&lt;/p&gt;
 &lt;h2 id=&#34;publier-du-code-code-block-avec-hugo&#34;&gt;Publier du code (code block) avec HUGO&lt;/h2&gt;
 &lt;p&gt;Un premier exemple simple pour du &lt;em&gt;&lt;strong&gt;bash&lt;/strong&gt;&lt;/em&gt; :&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#24909d&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;Date: &lt;/span&gt;&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;$(&lt;/span&gt;date&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;&lt;/span&gt;
@@ -40,7 +40,7 @@ Celui sera donc amené à être mis à jour régulièrement&amp;hellip;&lt;/p&gt
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#bbb&#34;&gt;key&lt;/span&gt; = &lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;value&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#bbb&#34;&gt;anotherkey&lt;/span&gt; = &lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;another value&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Et enfin utiliser un &lt;em&gt;&lt;strong&gt;Code Block&lt;/strong&gt;&lt;/em&gt; avec *&lt;strong&gt;mermaid&lt;/strong&gt; pour dessiner un petit graphe :&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Et enfin utiliser un &lt;em&gt;&lt;strong&gt;Code Block&lt;/strong&gt;&lt;/em&gt; avec &lt;em&gt;&lt;strong&gt;mermaid&lt;/strong&gt;&lt;/em&gt; pour dessiner un petit graphe :&lt;/p&gt;
 &lt;div class=&#34;mermaid&#34;&gt;graph LR
   A--&gt;B
   A--&gt;C
@@ -49,7 +49,7 @@ Celui sera donc amené à être mis à jour régulièrement&amp;hellip;&lt;/p&gt
 &lt;/div&gt;
 
 &lt;h2 id=&#34;dautres-meta-données-pour-le-footer-de-larticle&#34;&gt;D&amp;rsquo;autres meta-données pour le &lt;em&gt;&lt;strong&gt;footer&lt;/strong&gt;&lt;/em&gt; de l&amp;rsquo;article&lt;/h2&gt;
-&lt;p&gt;Ces méta-données sont directement définies en haut de cette article dans le fichier markdown.&lt;/p&gt;
+&lt;p&gt;Ces méta-données sont aussi directement définies dans le haut du fichier &lt;em&gt;&lt;strong&gt;markdown&lt;/strong&gt;&lt;/em&gt; de cet article.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#999;font-style:italic&#34;&gt;# ...&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#666&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;tags&lt;/span&gt;:&lt;span style=&#34;color:#666&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#666&#34;&gt;  &lt;/span&gt;- code blocks&lt;span style=&#34;color:#666&#34;&gt;
@@ -57,7 +57,7 @@ Celui sera donc amené à être mis à jour régulièrement&amp;hellip;&lt;/p&gt
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#666&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#999;font-style:italic&#34;&gt;#licence: Sous une licence spécifique &lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#666&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;lastmod&lt;/span&gt;:&lt;span style=&#34;color:#666&#34;&gt; &lt;/span&gt;2022-03-19&lt;span style=&#34;color:#666&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#666&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#447fcf;text-decoration:underline&#34;&gt;---&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Le résultat est visible ci-dessous.&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Le rendu est visible ci-dessous.&lt;/p&gt;
 </description>
         </item>
         
