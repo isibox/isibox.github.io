@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Avant-propos Mes premiers pas, comme architecte technique dans le Cloud, datent de 2014 lorsque que Microsoft a renommé sa Windows Azure Platform en Microsoft Azure et a proposé son nouveau modèle de déploiement ARM en remplacement de ce qui va bientôt disparaitre (2023) et que l&amp;rsquo;on appelle depuis le modèle Classic.
+L&amp;rsquo;Infrastructure as Code en était vraiment à ses débuts et la maturité d&amp;rsquo;Azure n&amp;rsquo;était pas ce qu&amp;rsquo;elle est aujourd&amp;rsquo;hui. Je travaillais alors avec un de mes collègues développeur systèmes et à chaque nouvelle évolution d&amp;rsquo;ARM, nous devions adapter nos templates ARM et nos scripts powershell pour maintenir les quelques infrastructures applicatives installées sur Azure.'><title>Landing Zone</title>
+
+<link rel='canonical' href='https://blog.cloud-guru.io/p/landing-zone/'>
+
+<link rel="stylesheet" href="/scss/style.min.b80bf249ce4a22cf55e8d7340a0b37a2f2c10f54f3a9a49cb94b694a2eb0bbea.css"><meta property='og:title' content='Landing Zone'>
+<meta property='og:description' content='Avant-propos Mes premiers pas, comme architecte technique dans le Cloud, datent de 2014 lorsque que Microsoft a renommé sa Windows Azure Platform en Microsoft Azure et a proposé son nouveau modèle de déploiement ARM en remplacement de ce qui va bientôt disparaitre (2023) et que l&amp;rsquo;on appelle depuis le modèle Classic.
+L&amp;rsquo;Infrastructure as Code en était vraiment à ses débuts et la maturité d&amp;rsquo;Azure n&amp;rsquo;était pas ce qu&amp;rsquo;elle est aujourd&amp;rsquo;hui. Je travaillais alors avec un de mes collègues développeur systèmes et à chaque nouvelle évolution d&amp;rsquo;ARM, nous devions adapter nos templates ARM et nos scripts powershell pour maintenir les quelques infrastructures applicatives installées sur Azure.'>
+<meta property='og:url' content='https://blog.cloud-guru.io/p/landing-zone/'>
+<meta property='og:site_name' content='Cloud-Guru, le Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2022-03-26T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2022-03-26T00:00:00&#43;00:00'/><meta property='og:image' content='https://blog.cloud-guru.io/p/landing-zone/landing-zone.jpg' />
+<meta name="twitter:title" content="Landing Zone">
+<meta name="twitter:description" content="Avant-propos Mes premiers pas, comme architecte technique dans le Cloud, datent de 2014 lorsque que Microsoft a renommé sa Windows Azure Platform en Microsoft Azure et a proposé son nouveau modèle de déploiement ARM en remplacement de ce qui va bientôt disparaitre (2023) et que l&amp;rsquo;on appelle depuis le modèle Classic.
+L&amp;rsquo;Infrastructure as Code en était vraiment à ses débuts et la maturité d&amp;rsquo;Azure n&amp;rsquo;était pas ce qu&amp;rsquo;elle est aujourd&amp;rsquo;hui. Je travaillais alors avec un de mes collègues développeur systèmes et à chaque nouvelle évolution d&amp;rsquo;ARM, nous devions adapter nos templates ARM et nos scripts powershell pour maintenir les quelques infrastructures applicatives installées sur Azure."><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://blog.cloud-guru.io/p/landing-zone/landing-zone.jpg' />
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended">
+                  <aside class="sidebar left-sidebar sticky ">
+                    <ol class="menu" id="main-menu">
+                      <li>
+                        <a href="/">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-back" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M9 11l-4 4l4 4m-4 -4h11a4 4 0 0 0 0 -8h-1" />
+</svg>
+
+
+
+                        </a>
+                      </li>
+                    </ol>
+                  </aside>
+                            
+              
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/landing-zone/">
+                <img src="/p/landing-zone/landing-zone_hu25d333fcded103db2f52f7476cb1420a_80419_800x0_resize_q75_box.jpg"
+                        srcset="/p/landing-zone/landing-zone_hu25d333fcded103db2f52f7476cb1420a_80419_800x0_resize_q75_box.jpg 800w, /p/landing-zone/landing-zone_hu25d333fcded103db2f52f7476cb1420a_80419_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="400" 
+                        loading="lazy"
+                        alt="Featured image of post Landing Zone" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/cloud/" style="background-color: #d9d4d7; color: #000;">
+                Cloud
+            </a>
+        
+            <a href="/categories/archi/" style="background-color: #2596be; color: #ffffff;">
+                Architecture
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/landing-zone/">Landing Zone</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">March 26, 2022</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    10 minutes de lecture
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="avant-propos">Avant-propos</h2>
+<p>Mes premiers pas, comme architecte technique dans le Cloud, datent de 2014 lorsque que Microsoft a renommé sa <em><strong>Windows Azure Platform</strong></em> en <em><strong>Microsoft Azure</strong></em> et a proposé son nouveau modèle de déploiement <em><strong>ARM</strong></em> en remplacement de ce qui va bientôt disparaitre (2023) et que l&rsquo;on appelle depuis le modèle <em><strong>Classic</strong></em>.</p>
+<p>L&rsquo;<em><strong>Infrastructure as Code</strong></em> en était vraiment à ses débuts et la maturité d&rsquo;Azure n&rsquo;était pas ce qu&rsquo;elle est aujourd&rsquo;hui. Je travaillais alors avec un de mes collègues développeur systèmes et à chaque nouvelle évolution d&rsquo;ARM, nous devions adapter nos templates ARM et nos scripts powershell pour maintenir les quelques infrastructures applicatives installées sur Azure.</p>
+<p>Quelques années plus tard, en 2017, dans le cadre d&rsquo;une mission longue chez un <em><strong>géant de la grande distribution</strong></em>, j&rsquo;ai commencé à travaillé sur la définition d&rsquo;un <em><strong>socle Cloud</strong></em> permettant d&rsquo;accueillir plusieurs centaines de leurs applications dans le cadre d&rsquo;un grand programme de transformation digitale de l&rsquo;Entreprise.</p>
+<p>À ce moment là, il n&rsquo;exsitait encore, aucune <em><strong>bonnes pratiques</strong></em>, ni <em><strong>principes fondateurs</strong></em> pour définir un SI d&rsquo;Entprepise dans le Cloud Azure et clairement, la plateforme de Microsoft n&rsquo;était pas encore prête pour répondre pleinement à ce type de besoin. Nous avons donc du nous adapter et proposer un modèle permettant d&rsquo;accueillir plusieurs équipes différentes sur un même espace Cloud partagé en respectant un fort cloisonnement technique et des règles de sécurité définies par le RSSI responsable du domaine <em><strong>Cloud</strong></em>.</p>
+<p>En juillet 2017, après de nombreux échanges avec la <em><strong>CAT Team de Microsoft</strong></em>, nous avons réussi à définir un modèle et un prototype qui a permis de montrer sa robustesse en portant quelques applications pilotes et la plateforme de CICD de l&rsquo;Entreprise. Un premier document Microsoft <a class="link" href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/resources/vdc"  target="_blank" rel="noopener"
+    >Azure Virtual Datacenter</a> est sorti en novembre de cette même année. Les fondations et les bonnes pratiques pour définir un Cloud d&rsquo;Entreprise s&rsquo;étoffaient. Nous avions le sentiment d&rsquo;avoir participé, à notre échelle, à celles-ci. 🤗</p>
+<p>En 2018, nous avons mis en place l&rsquo;instance de production qui héberge notamment leur site de <em><strong>e-commerce</strong></em> encore aujourd&rsquo;hui. Si notre <em><strong>socle Cloud</strong></em> était robuste, son code <strong>terraform</strong> etait difficile à faire évoluer. Toutefois, les principes étaient bons et nous avons pu les reproduire chez Google en 2019 pour héberger leur <em><strong>Data lake</strong></em>. Nous avons amélioré notre qualité de code terraform (en nous appuyant sur du templating <a class="link" href="https://handlebarsjs.com"  target="_blank" rel="noopener"
+    >Handlebars</a>) garantissant cette fois une maintenabilité optimale.</p>
+<p>Aujourd&rsquo;hui, les <em><strong>Cloud Providers</strong></em> proposent leur définitions de ces fondations et de ces bonnes pratiques. Souvent appelées Landing Zone ou Cloud Foundation.</p>
+<p>Cet article en présente les grands principes et les éléments clefs.</p>
+<h2 id="définition-générique-dune-landing-zone">Définition générique d&rsquo;une Landing Zone</h2>
+<p>Nous pouvons définir une Landing Zone (ou Cloud Fondations), comme la prise en compte dans le Cloud, des principes fondateurs proposés dans le schéma ci-dessous et précisés par les explications attenantes. Cette définition n&rsquo;est pas normalisée (au sens ISO du terme). Celle-ci n&rsquo;est donc pas unique. Il faut éventuellement l&rsquo;adapter à son propre besoin. Elle a l&rsquo;ambition toutefois de définir une base de reflexion et d&rsquo;amélioration.</p>
+<h3 id="schéma">Schéma</h3>
+<p><img src="/img/landing-zone.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Landing Zone"
+	
+	
+></p>
+<h3 id="explications-générales">Explications générales</h3>
+<p>La définition d&rsquo;une <em><strong>Landing Zone</strong></em> dans le Cloud repose sur 4 familles de principes, d&rsquo;outils et/ou de bonnes pratiques.
+Nous parlons avant tout ici de principes d&rsquo;architectures Cloud (<strong>1</strong>) et d&rsquo;éléments de connectivité (<strong>2</strong>) depuis et vers le Cloud, le réseau WAN du SI et Internet. Tout cela devant être conçu, developpé, testé, intégré et déployé à l&rsquo;aide d&rsquo;une plateforme CICD (<em><strong>3</strong></em>) permettant d&rsquo;appliquer les méthodologies <em><strong>agiles</strong></em>.</p>
+<p>Bien sûr, l&rsquo;agilité ne signifie en rien l&rsquo;absence d&rsquo;une gouvernance (<em><strong>4</strong></em>) adaptée, qui est le facteur clef de la réussite de l&rsquo;utilisation du Cloud pour la transformation du SI d&rsquo;Entreprise et de son mantien en condition opérationnelle.</p>
+<h3 id="explications-détaillées">Explications détaillées</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Family</th>
+<th>Item</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>Architecture</td>
+<td>Cloud Native</td>
+<td>L&rsquo;expression <em><strong>Cloud Native</strong></em> est utilisée pour désigner une architecture spécifiquement développée pour utiliser de façon optimale le Cloud afin de bénéficer de ses capacités de résilience et de performances en réduisant autant que possible ses coûts de fonctionnements en fonction du besoin.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Scalability</td>
+<td>La <em><strong>scalability</strong></em> (ou élasticité en français) est la capacité qu&rsquo;a un système de se redimensionner (croissance ou décroissance) en fonction de son utilisation (ou charge)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Resilience</td>
+<td>La <em><strong>résilience</strong></em> est une caractéristique qui fait partie du concept <em><strong>Cloud Native</strong></em> mais dont l&rsquo;importance mérite d&rsquo;être spécifiquement rappelée. Elle représente la capacité qu&rsquo;a un système de continuer de fonctionner en cas de panne d&rsquo;un ou de plusieurs de ses composants, et ceci sans perte de niveau de service.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Self Healing</td>
+<td>Le <em><strong>self healing</strong></em> (auto-guérison) est la capacité qu&rsquo;a un système de se réparer lui-même en cas d&rsquo;une panne d&rsquo;un de ses composants.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Connectivity</td>
+<td>Network</td>
+<td>Le <em><strong>Network</strong></em> est l&rsquo;infrastructure réseau en place dans le Cloud (dans l&rsquo;immense majorité des cas avec des IP respectant la RFC 1918).</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Private Link</td>
+<td>Un <em><strong>Private Link</strong></em> est soit un tunnel VPN (via Internet) soit une liaision spécialisée (Leased Line via un opérateur) pour relier le réseau WAN de l&rsquo;Entreprise avec le réseau privé construit dans le Cloud.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Outbound Flows</td>
+<td>Les <em><strong>Outbound Flows</strong></em> sont les flux (techniques) sortants entre une infrastructure Cloud soit vers Internet, vers le WAN (Via le Private Link) de l&rsquo;Entreprise ou vers une autre infrastructure Cloud. Ils doivent être connus et doivent respecter les directives de sécurité prélablement définies.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Inbound</td>
+<td>Les <em><strong>Inbound Flows</strong></em> sont les flux (techniques) entrants vers une infrastructure Cloud depuis Internet, depuis le WAN (Via le Private Link) de l&rsquo;Entreprise ou depuis une autre infrastructure Cloud. Ils doivent être connus et doivent respecter les directives de sécurité prélablement définies.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>CICD Platform</td>
+<td>Agile Software Management</td>
+<td>Le choix d&rsquo;un logiciel de gestion de développement est important et dépend notamment de la méthodologie agile que l&rsquo;on souhaite appliquer mais aussi en fonction du (ou des) Cloud Prodiver(s) choisi(s). Une solution SaaS est intéressante pour éviter d&rsquo;avoir un produit supplémentaire à maitenir. A définir en fonction du besoin et de la politique de l&rsquo;Entreprise sur la localisation des données.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Sources Repository</td>
+<td>Je pense que s&rsquo;il n&rsquo;est plus nécessaire de présenter l&rsquo;intérêt de l&rsquo;utilisation d&rsquo;un outils de gestion de versions du Code Source, il est toutefois nécessaire de définir une méthodologie d&rsquo;utilisation pour en tirer pleinement partie. Il existe de nombreuses méthodes et standards à ce sujet. Il faut choisir ceux adaptés à sa façon de travailler et aux nombre d&rsquo;équipes de développement.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Pipelines</td>
+<td>L&rsquo;industrialisation du cycle de développement (agile) d&rsquo;un produit (ou logiciel) est aujourd&rsquo;hui complètement rentré dans les standards. Si la partie déploiement (<em><strong>C</strong></em>ontinuous <em><strong>D</strong></em>elivery/Deployment) est relativement bien maitrisée, il reste encore un peu de chemin à parcourir sur l&rsquo;aspect intégration (<em><strong>C</strong></em>ontinuous <em><strong>I</strong></em>ntegration). Les tests restent le parent pauvre du <em><strong>CI/CD</strong></em> et notamment les méthodologies de développement liées aux tests (TDD/<em><strong>T</strong></em>ests <em><strong>D</strong></em>riven <em><strong>D</strong></em>evelopments).</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Artifact Respository</td>
+<td>Un <em><strong>Artifact Respository</strong></em> est le pendant du <em><strong>Source Repository</strong></em> pour les productions <em><strong>d&rsquo;objets binaires</strong></em> (ou simplement <em><strong>binaires</strong></em>) associés à des métadonnées (dont le numéro de version). Il référence aussi les dépendances entre les <em><strong>binaires</strong></em> produits et les <em><strong>binaires</strong></em> nécessaires a leur production (build). L&rsquo;un des grands souhaits de nos RSSI est de s&rsquo;assurer que les <em><strong>binaires</strong></em> utilisés dans nos applications soient issues de l&rsquo;<em><strong>Articfact Respository</strong></em> de l&rsquo;Entreprise afin de maitriser la sécurité du parc applicatif.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Governance</td>
+<td>Docs &amp; Standards</td>
+<td>La documentation est un élément incontournable pour apréhender un système complexe. Elle doit être adaptée sur le fond et sur la forme à ceux qui en ont besoin. Elle doit être à jour et les éléments qui la composent doivent être relativement génériques pour le garantir. Tout comme n&rsquo;importe quel code source, la documentation doit être versionnée et donc intégrée si possible dans un <em><strong>Source Respository</strong></em>.  Les standards représentent un élément clef de la définition et de la réutilisation de <em><strong>composants</strong></em> et garantissent la simplicité et la stabilité d&rsquo;un système; ainsi que sa mise à jour. Il faut aussi savoir les remettre en question lorsque le besoin le nécessite.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>IAM</td>
+<td>La mise en place d&rsquo;un outil de gestion des identités et des accès est un élément incontournable. Selon les cas, il est souvent nécessaire de bien différencier les identités et les accès relatifs a l&rsquo;utilisation des applications de ceux relatifs a leurs constructions. Il peut être nécessaire d&rsquo;avoir deux IAM. Un technique (pour la construction) et un fonctionnel (pour l&rsquo;utilisation). Un administrateur ne devrait pas se servir de la même identité pour utiliser son poste de travail (les applications d&rsquo;Entreprise, sa messagerie ou Internet) que celle qu&rsquo;il utilise pour manipuler les éléments techniques du SI d&rsquo;Entreprise.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Dashboards</td>
+<td>Les éléments de type tableaux de bord doivent être générés automatiquement pour être le reflet de ce qui existe ou de son évolution.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Monitoring / Alerting</td>
+<td>Mettre en place un système de supervision et d&rsquo;alerte permettant de connaitre à chaque instant l&rsquo;état de santé de son système d&rsquo;information est essentiel. La supervision doit aussi permettre l&rsquo;analyse post-mortem des incidents et donc doit être la plus précise possible et la rétention des données qui la composent adaptée au besoin. Les alertes ne doivent être générées que lors d&rsquo;une absolue nécessité. Dans le cas contraire, un simple évènement, que l&rsquo;on pourra traiter en temps voulu, fera tout à fait l&rsquo;affaire. C&rsquo;est primordial pour faire confiance à son système de supervision.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Security Management</td>
+<td>Le management de la sécurité doit permettre d&rsquo;interdire ou de remonter les infractions aux directives de sécurité établis par la <em><strong>PSSI</strong></em> (<em><strong>P</strong></em>olitique de <em><strong>S</strong></em>écurité du <em><strong>S</strong></em>ystème d&rsquo;<em><strong>I</strong></em>nformation). La sécurité ne doit pas être un contrainte, elle est nécessaire pour protéger la valeur générée par l&rsquo;Entreprise. Les Cloud disposent actuellement d&rsquo;outils permettant d&rsquo;appliquer cela facilement. Des produits tiers sont proposés sur le marché pour compléter cette offre et permettre d&rsquo;avoir une vision multi-cloud de la sécurité de son SI.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Cost Management</td>
+<td>Le Cloud apporte une nouvelle façon d&rsquo;appréhender les coûts. Ceux-ci représentent essentiellement des coûts de fonctionnement (OPEX) et doivent être constamment supervisés. Le mode de paiment à l&rsquo;utilisation (<em><strong>P</strong></em>ay <em><strong>A</strong></em>s <em><strong>Y</strong></em>ou <em><strong>G</strong></em>o) nécessite un changement de comportement sur l&rsquo;utilisation des environnements de POC (<em><strong>P</strong></em>roof <em><strong>O</strong></em>f <em><strong>C</strong></em>oncept), de développement (supprimer ou <em>éteindre</em> une infrastructure inutilisée par exemple) ou de production (utilisation de l&rsquo;élasticité). Ensuite, une mauvaise utilisation ou connaissance d&rsquo;un composant peut rapidement engendrer des coûts non prévus. Les Cloud Providers changent aussi régulièrement de modèle de facturation et il est donc nécessaire de mesurer rapidement ces changements de coûts pour adapter les infrastructures qui les génèrent. De plus, il existe des réducitons de coûts proposés par ces derniers qui permettent, s&rsquo;ils sont bien utilisés, de faire des économies substentielles. C&rsquo;est l&rsquo;apparition d&rsquo;un nouveau métier : FinOps. Les architectes doivent mettre en place les outils permettant aux FinOps de maitriser tout cela.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Inventory Management</td>
+<td>Gérer les assets informatiques de l&rsquo;Entreprise est toujours utile mais les outils doivent être adaptés à cette nouvelle façon de consommer dans le Cloud.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Update Management</td>
+<td>Pour garantir une dette technologique la plus basse possible, la mise à jour des infrastructures Cloud doivent se faire en respectant les principes de construction (<em><strong>Cloud Native</strong></em>). Il est nécessaire de revoir sa façon de procéder mais il est toujours important de connaitre l&rsquo;état de son SI pour maitriser sa sécurité et son maintien en condition opérationnelle.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Change Management</td>
+<td>Le <em><strong>Change Management</strong></em> reste bien évidemment d&rsquo;actualité, mais son mode de fonctionnement doit être forcément repensé et adapté aux nouvelles possibilités du Cloud et a l&rsquo;utilisation des méthodes agiles. Certaines entreprises font une mise en production de certaines applications toutes les 15 min pour faire face à des besoins clients évoluant en temps réel et ne pas perdre de parts de marché. Les processus de Change Management doivent donc être adaptés pour répondre a ce type de besoin. Il faut garder à l&rsquo;esprit quels sont les objectifs (mesure d&rsquo;impact, communication, traçabilité, &hellip;) de ceux-ci afin d&rsquo;y répondre autrement.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="liens-sur-les-landing-zones-ou-cloud-foundation-chez-les-cloud-providers-azure-gcp-et-aws">Liens sur les Landing Zones (ou Cloud Foundation) chez les Cloud Providers Azure, GCP et AWS</h2>
+<p>Le tableau ci-dessous présente quelques liens relatifs à la définition de Landing Zone (ou Cloud Foundation) des Clouds Azure, GCP et AWS.</p>
+<p>De façon plus large, certains de ces liens présentent aussi les principes et les bonnes pratiques proposés par les Cloud Providers.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Cloud Providers</th>
+<th>Liens</th>
+<th>Commentaires</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Azure</td>
+<td><a class="link" href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/"  target="_blank" rel="noopener"
+    >Microsoft Cloud Adoption Framework for Azure</a></td>
+<td>Documentations, bonnes pratiques et outils conseillés pour une meilleure adoption du Cloud Azure.</td>
+</tr>
+<tr>
+<td></td>
+<td><a class="link" href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/"  target="_blank" rel="noopener"
+    >Azure Landing Zone</a></td>
+<td>La définition de la <em><strong>Landing Zone</strong></em> selon Azure.</td>
+</tr>
+<tr>
+<td>GCP</td>
+<td><a class="link" href="https://cloud.google.com/docs/enterprise/best-practices-for-enterprise-organizations"  target="_blank" rel="noopener"
+    >Best Practices for enterprise organisation</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a class="link" href="https://cloud.google.com/architecture/framework"  target="_blank" rel="noopener"
+    >Google Cloud Architecture Framework</a></td>
+<td>Guide des bonnes pratiques à suivre pour aider les entreprises à comprendre et utiliser le Cloud GCP en fonction de leurs besoins.</td>
+</tr>
+<tr>
+<td></td>
+<td><a class="link" href="https://cloud.google.com/foundation-toolkit"  target="_blank" rel="noopener"
+    >Cloud Foundation Toolkit</a></td>
+<td>Toolkit de modèles techniques proposé par Google aux entreprises pour accélérer l&rsquo;utilisation du Cloud GCP</td>
+</tr>
+<tr>
+<td>AWS</td>
+<td><a class="link" href="https://aws.amazon.com/solutions/implementations/aws-landing-zone/?nc1=h_ls"  target="_blank" rel="noopener"
+    >AWS Landing Zone</a></td>
+<td>AWS Landing Zone permet d&rsquo;aider les entreprises à configurer plus rapidement un environnement AWS multi)comptes en utilisant les bonnes pratiques.</td>
+</tr>
+</tbody>
+</table></div>
+
+    
+</section>
+
+
+    <footer class="article-footer">
+    
+    
+    
+    
+
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <a href="http://creativecommons.org/licenses/by-nc-sa/4.0//deed.fr" target="_blank">
+            <img  border="0" align="center"  src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"/>
+        </a><span>Sous licence CC BY-NC-SA 4.0</span>
+    </section>
+    
+</footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    <script src="https://utteranc.es/client.js" 
+        repo="isibox/isibox.github.io"
+        issue-term="pathname"
+        
+        label="Ceci est le label"
+        
+        crossorigin="anonymous"
+        async
+        >
+</script>
+
+<style>
+    .utterances {
+        max-width: unset;
+    }
+</style>
+
+<script>
+    function setUtterancesTheme(theme) {
+        let utterances = document.querySelector('.utterances iframe');
+        if (utterances) {
+            utterances.contentWindow.postMessage(
+                {
+                    type: 'set-theme',
+                    theme: `github-${theme}`
+                },
+                'https://utteranc.es'
+            );
+        }
+    }
+
+    addEventListener('message', event => {
+        if (event.origin !== 'https://utteranc.es') return;
+        setUtterancesTheme(document.documentElement.dataset.scheme)
+    });
+
+    window.addEventListener('onColorSchemeChange', (e) => {
+        setUtterancesTheme(e.detail)
+    })
+</script>
+
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2022 Cloud-Guru, le Blog
+    </section>
+    
+    <section class="powerby">
+        Généré avec <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Thème <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.10.0">Stack</a></b> conçu par <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table des matières</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#avant-propos">Avant-propos</a></li>
+    <li><a href="#définition-générique-dune-landing-zone">Définition générique d&rsquo;une Landing Zone</a>
+      <ul>
+        <li><a href="#schéma">Schéma</a></li>
+        <li><a href="#explications-générales">Explications générales</a></li>
+        <li><a href="#explications-détaillées">Explications détaillées</a></li>
+      </ul>
+    </li>
+    <li><a href="#liens-sur-les-landing-zones-ou-cloud-foundation-chez-les-cloud-providers-azure-gcp-et-aws">Liens sur les Landing Zones (ou Cloud Foundation) chez les Cloud Providers Azure, GCP et AWS</a></li>
+  </ul>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

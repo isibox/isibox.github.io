@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>This work is licensed under a CC BY-NC-SA 4.0 International License.</copyright>
-        <lastBuildDate>Mon, 07 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.cloud-guru.io/index.xml" rel="self" type="application/rss+xml" />
+        <lastBuildDate>Sat, 26 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.cloud-guru.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
         <title>Démarrez ici !</title>
         <link>https://blog.cloud-guru.io/d%C3%A9marrez-ici/</link>
@@ -74,7 +74,7 @@
 &lt;td&gt;Ces trois éléments représentent le réseau WAN du SI d&amp;rsquo;Entreprise (géré le plus souvent par un opérateur comme par exemple &lt;a class=&#34;link&#34; href=&#34;https://www.equinix.fr&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Equinix&lt;/a&gt;, &lt;a class=&#34;link&#34; href=&#34;https://www.colt.net&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Colt&lt;/a&gt; ou &lt;a class=&#34;link&#34; href=&#34;https://www.orange-business.com/fr&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Orange&lt;/a&gt;), Internet (que l&amp;rsquo;on ne présente plus) et un liaison privée (&lt;strong&gt;P&lt;/strong&gt;rivate &lt;strong&gt;L&lt;/strong&gt;ink) entre le datacenter &lt;em&gt;&lt;strong&gt;Non Cloud&lt;/strong&gt;&lt;/em&gt; et la &lt;strong&gt;Landing Zone&lt;/strong&gt;.&lt;/td&gt;
+    &gt;Orange&lt;/a&gt;), Internet (que l&amp;rsquo;on ne présente plus) et une liaison privée (&lt;strong&gt;P&lt;/strong&gt;rivate &lt;strong&gt;L&lt;/strong&gt;ink de type tunnel VPN via Internet ou Liaison spécialisé via un opérateur) entre le datacenter &lt;em&gt;&lt;strong&gt;Non Cloud&lt;/strong&gt;&lt;/em&gt; et la &lt;strong&gt;Landing Zone&lt;/strong&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;A,B,C&lt;/td&gt;
