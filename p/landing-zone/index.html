@@ -144,16 +144,16 @@ L&amp;rsquo;Infrastructure as Code en était vraiment à ses débuts et la matur
     <h2 id="avant-propos">Avant-propos</h2>
 <p>Mes premiers pas, comme architecte technique dans le Cloud, datent de 2014 lorsque que Microsoft a renommé sa <em><strong>Windows Azure Platform</strong></em> en <em><strong>Microsoft Azure</strong></em> et a proposé son nouveau modèle de déploiement <em><strong>ARM</strong></em> en remplacement de ce qui va bientôt disparaitre (2023) et que l&rsquo;on appelle depuis le modèle <em><strong>Classic</strong></em>.</p>
 <p>L&rsquo;<em><strong>Infrastructure as Code</strong></em> en était vraiment à ses débuts et la maturité d&rsquo;Azure n&rsquo;était pas ce qu&rsquo;elle est aujourd&rsquo;hui. Je travaillais alors avec un de mes collègues développeur systèmes et à chaque nouvelle évolution d&rsquo;ARM, nous devions adapter nos templates ARM et nos scripts powershell pour maintenir les quelques infrastructures applicatives installées sur Azure.</p>
-<p>Quelques années plus tard, en 2017, dans le cadre d&rsquo;une mission longue chez un <em><strong>géant de la grande distribution</strong></em>, j&rsquo;ai commencé à travaillé sur la définition d&rsquo;un <em><strong>socle Cloud</strong></em> permettant d&rsquo;accueillir plusieurs centaines de leurs applications dans le cadre d&rsquo;un grand programme de transformation digitale de l&rsquo;Entreprise.</p>
-<p>À ce moment là, il n&rsquo;exsitait encore, aucune <em><strong>bonnes pratiques</strong></em>, ni <em><strong>principes fondateurs</strong></em> pour définir un SI d&rsquo;Entprepise dans le Cloud Azure et clairement, la plateforme de Microsoft n&rsquo;était pas encore prête pour répondre pleinement à ce type de besoin. Nous avons donc du nous adapter et proposer un modèle permettant d&rsquo;accueillir plusieurs équipes différentes sur un même espace Cloud partagé en respectant un fort cloisonnement technique et des règles de sécurité définies par le RSSI responsable du domaine <em><strong>Cloud</strong></em>.</p>
+<p>Quelques années plus tard, en 2017, dans le cadre d&rsquo;une mission longue chez un <em><strong>géant de la grande distribution</strong></em>, j&rsquo;ai commencé à travailler sur la définition d&rsquo;un <em><strong>socle Cloud</strong></em> permettant d&rsquo;accueillir plusieurs centaines de leurs applications dans le cadre d&rsquo;un grand programme de transformation digitale de l&rsquo;Entreprise.</p>
+<p>À ce moment là, il n&rsquo;existait encore aucune <em><strong>bonnes pratiques</strong></em>, ni <em><strong>principes fondateurs</strong></em> pour définir un SI d&rsquo;Entreprise dans le Cloud Azure et clairement, la plateforme de Microsoft n&rsquo;était pas encore prête pour répondre pleinement à ce type de besoin. Nous avons donc du nous adapter et proposer un modèle permettant d&rsquo;accueillir plusieurs équipes différentes sur un même espace Cloud partagé en respectant un fort cloisonnement technique et des règles de sécurité définies par le RSSI responsable du domaine <em><strong>Cloud</strong></em>.</p>
 <p>En juillet 2017, après de nombreux échanges avec la <em><strong>CAT Team de Microsoft</strong></em>, nous avons réussi à définir un modèle et un prototype qui a permis de montrer sa robustesse en portant quelques applications pilotes et la plateforme de CICD de l&rsquo;Entreprise. Un premier document Microsoft <a class="link" href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/resources/vdc"  target="_blank" rel="noopener"
     >Azure Virtual Datacenter</a> est sorti en novembre de cette même année. Les fondations et les bonnes pratiques pour définir un Cloud d&rsquo;Entreprise s&rsquo;étoffaient. Nous avions le sentiment d&rsquo;avoir participé, à notre échelle, à celles-ci. 🤗</p>
-<p>En 2018, nous avons mis en place l&rsquo;instance de production qui héberge notamment leur site de <em><strong>e-commerce</strong></em> encore aujourd&rsquo;hui. Si notre <em><strong>socle Cloud</strong></em> était robuste, son code <strong>terraform</strong> etait difficile à faire évoluer. Toutefois, les principes étaient bons et nous avons pu les reproduire chez Google en 2019 pour héberger leur <em><strong>Data lake</strong></em>. Nous avons amélioré notre qualité de code terraform (en nous appuyant sur du templating <a class="link" href="https://handlebarsjs.com"  target="_blank" rel="noopener"
+<p>En 2018, nous avons mis en place l&rsquo;instance de production qui héberge notamment leur site de <em><strong>e-commerce</strong></em> encore aujourd&rsquo;hui. Si notre <em><strong>socle Cloud</strong></em> était robuste, son code <strong>terraform</strong> était difficile à faire évoluer. Toutefois, les principes étaient bons et nous avons pu les reproduire chez Google en 2019 pour héberger leur <em><strong>Data lake</strong></em>. Nous avons amélioré notre qualité de code terraform (en nous appuyant sur du templating <a class="link" href="https://handlebarsjs.com"  target="_blank" rel="noopener"
     >Handlebars</a>) garantissant cette fois une maintenabilité optimale.</p>
 <p>Aujourd&rsquo;hui, les <em><strong>Cloud Providers</strong></em> proposent leur définitions de ces fondations et de ces bonnes pratiques. Souvent appelées Landing Zone ou Cloud Foundation.</p>
 <p>Cet article en présente les grands principes et les éléments clefs.</p>
 <h2 id="définition-générique-dune-landing-zone">Définition générique d&rsquo;une Landing Zone</h2>
-<p>Nous pouvons définir une Landing Zone (ou Cloud Fondations), comme la prise en compte dans le Cloud, des principes fondateurs proposés dans le schéma ci-dessous et précisés par les explications attenantes. Cette définition n&rsquo;est pas normalisée (au sens ISO du terme). Celle-ci n&rsquo;est donc pas unique. Il faut éventuellement l&rsquo;adapter à son propre besoin. Elle a l&rsquo;ambition toutefois de définir une base de reflexion et d&rsquo;amélioration.</p>
+<p>Nous pouvons définir une Landing Zone (ou Cloud Fondations), comme la prise en compte dans le Cloud, des principes fondateurs proposés dans le schéma ci-dessous et précisés dans les chapitres suivants. Cette définition n&rsquo;est pas normalisée (au sens ISO du terme). Celle-ci n&rsquo;est donc pas unique. Il faut éventuellement l&rsquo;adapter à son propre besoin. Elle a l&rsquo;ambition toutefois de définir une base de reflexion et d&rsquo;amélioration.</p>
 <h3 id="schéma">Schéma</h3>
 <p><img src="/img/landing-zone.jpg"
 	
@@ -196,19 +196,19 @@ Nous parlons avant tout ici de principes d&rsquo;architectures Cloud (<strong>1<
 <td></td>
 <td></td>
 <td>Scalability</td>
-<td>La <em><strong>scalability</strong></em> (ou élasticité en français) est la capacité qu&rsquo;a un système de se redimensionner (croissance ou décroissance) en fonction de son utilisation (ou charge)</td>
+<td>La <em><strong>scalability</strong></em> (ou élasticité en français) est la capacité qu&rsquo;un système a de se redimensionner (croissance ou décroissance) en fonction de son utilisation (ou de sa charge)</td>
 </tr>
 <tr>
 <td></td>
 <td></td>
 <td>Resilience</td>
-<td>La <em><strong>résilience</strong></em> est une caractéristique qui fait partie du concept <em><strong>Cloud Native</strong></em> mais dont l&rsquo;importance mérite d&rsquo;être spécifiquement rappelée. Elle représente la capacité qu&rsquo;a un système de continuer de fonctionner en cas de panne d&rsquo;un ou de plusieurs de ses composants, et ceci sans perte de niveau de service.</td>
+<td>La <em><strong>résilience</strong></em> est une caractéristique qui fait partie du concept <em><strong>Cloud Native</strong></em> mais dont l&rsquo;importance mérite d&rsquo;être spécifiquement rappelée. Elle représente la capacité qu&rsquo;un système a de continuer de fonctionner en cas de panne d&rsquo;un ou de plusieurs de ses composants, et ceci sans perte de niveau de service.</td>
 </tr>
 <tr>
 <td></td>
 <td></td>
 <td>Self Healing</td>
-<td>Le <em><strong>self healing</strong></em> (auto-guérison) est la capacité qu&rsquo;a un système de se réparer lui-même en cas d&rsquo;une panne d&rsquo;un de ses composants.</td>
+<td>Le <em><strong>self healing</strong></em> (auto-guérison) est la capacité qu&rsquo;un système a de se réparer lui-même en cas d&rsquo;une panne d&rsquo;un de ses composants.</td>
 </tr>
 <tr>
 <td></td>
@@ -226,19 +226,20 @@ Nous parlons avant tout ici de principes d&rsquo;architectures Cloud (<strong>1<
 <td>2</td>
 <td>Connectivity</td>
 <td>Network</td>
-<td>Le <em><strong>Network</strong></em> est l&rsquo;infrastructure réseau en place dans le Cloud (dans l&rsquo;immense majorité des cas avec des IP respectant la RFC 1918).</td>
+<td>Le <em><strong>Network</strong></em> est l&rsquo;infrastructure réseau en place dans le Cloud (dans l&rsquo;immense majorité des cas avec des IP respectant la <a class="link" href="https://datatracker.ietf.org/doc/html/rfc1918"  target="_blank" rel="noopener"
+    >RFC 1918</a>).</td>
 </tr>
 <tr>
 <td></td>
 <td></td>
 <td>Private Link</td>
-<td>Un <em><strong>Private Link</strong></em> est soit un tunnel VPN (via Internet) soit une liaision spécialisée (Leased Line via un opérateur) pour relier le réseau WAN de l&rsquo;Entreprise avec le réseau privé construit dans le Cloud.</td>
+<td>Un <em><strong>Private Link</strong></em> est principalement, soit un tunnel VPN (via Internet), soit une liaision spécialisée (Leased Line via un opérateur), pour relier le réseau WAN de l&rsquo;Entreprise avec le réseau privé construit dans le Cloud.</td>
 </tr>
 <tr>
 <td></td>
 <td></td>
 <td>Outbound Flows</td>
-<td>Les <em><strong>Outbound Flows</strong></em> sont les flux (techniques) sortants entre une infrastructure Cloud soit vers Internet, vers le WAN (Via le Private Link) de l&rsquo;Entreprise ou vers une autre infrastructure Cloud. Ils doivent être connus et doivent respecter les directives de sécurité prélablement définies.</td>
+<td>Les <em><strong>Outbound Flows</strong></em> sont les flux (techniques) sortants depuis une infrastructure Cloud, soit vers Internet, soit vers le WAN (via le Private Link) de l&rsquo;Entreprise ou vers une autre infrastructure Cloud. Ils doivent être connus et doivent respecter les directives de sécurité prélablement définies.</td>
 </tr>
 <tr>
 <td></td>
