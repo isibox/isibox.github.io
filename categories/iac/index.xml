@@ -14,7 +14,7 @@
         <pubDate>Thu, 07 Apr 2022 08:15:15 +0200</pubDate>
         
         <guid>https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/</guid>
-        <description>&lt;img src="https://blog.cloud-guru.io/img/iac.png" alt="Featured image of post Découverte de Bicep" /&gt;&lt;h2 id=&#34;documentations-produit&#34;&gt;Documentations Produit&lt;/h2&gt;
+        <description>&lt;img src="https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/iac.jpg" alt="Featured image of post Découverte de Bicep" /&gt;&lt;h2 id=&#34;documentations-produit&#34;&gt;Documentations Produit&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Visitez la document Bicep (page d&amp;rsquo;acceuil)&lt;/a&gt;&lt;/li&gt;
@@ -118,11 +118,11 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;Microsoft.Resources/deployments&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;résultat-sur-le-portail-azure&#34;&gt;Résultat sur le Portail Azure&lt;/h4&gt;
-&lt;p&gt;Le &amp;ldquo;Resource Group&amp;rdquo; &lt;strong&gt;RGSCE01D&lt;/strong&gt; dans le Portail Azure
-&lt;img src=&#34;https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/OutputSimpleCodeDeployment.png&#34;
+&lt;p&gt;Le &amp;ldquo;Resource Group&amp;rdquo; &lt;strong&gt;RGSCE01D&lt;/strong&gt; dans le Portail Azure&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/OutputSimpleCodeDeployment.jpg&#34;
 	width=&#34;1784&#34;
 	height=&#34;908&#34;
-	srcset=&#34;https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/OutputSimpleCodeDeployment_hu8fddf6f7fe9e468c3592c2b27464eee8_164466_480x0_resize_box_3.png 480w, https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/OutputSimpleCodeDeployment_hu8fddf6f7fe9e468c3592c2b27464eee8_164466_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/OutputSimpleCodeDeployment_hu7fba9da1679ce4a56c592454604cb9c1_180058_480x0_resize_q75_box.jpg 480w, https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/OutputSimpleCodeDeployment_hu7fba9da1679ce4a56c592454604cb9c1_180058_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;RGSCE01D&#34;
@@ -133,11 +133,11 @@
 		data-flex-basis=&#34;471px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;Le &lt;strong&gt;deployment&lt;/strong&gt; &lt;strong&gt;SimpleCodeDeployment&lt;/strong&gt; dans le Portail Azure
-&lt;img src=&#34;https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalSimpleCodeDeployment.png&#34;
+&lt;p&gt;Le &lt;strong&gt;deployment&lt;/strong&gt; &lt;strong&gt;SimpleCodeDeployment&lt;/strong&gt; dans le Portail Azure&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalSimpleCodeDeployment.jpg&#34;
 	width=&#34;1462&#34;
 	height=&#34;130&#34;
-	srcset=&#34;https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalSimpleCodeDeployment_hud5e731a2dbb446301a2dceb67cc720df_36077_480x0_resize_box_3.png 480w, https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalSimpleCodeDeployment_hud5e731a2dbb446301a2dceb67cc720df_36077_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalSimpleCodeDeployment_hu7fba9da1679ce4a56c592454604cb9c1_45070_480x0_resize_q75_box.jpg 480w, https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalSimpleCodeDeployment_hu7fba9da1679ce4a56c592454604cb9c1_45070_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Simple Code Deployment&#34;
@@ -256,12 +256,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#6ab825;font-weight:bold&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#ed9d13&#34;&gt;&amp;#34;Microsoft.Resources/deployments&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;résultat-sur-le-portail-azure-1&#34;&gt;Résultat sur le Portail Azure&lt;/h4&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;hellip;
-&lt;img src=&#34;https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalSimpleCodeDeploymentUpdate.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalSimpleCodeDeploymentUpdate.jpg&#34;
 	width=&#34;546&#34;
 	height=&#34;86&#34;
-	srcset=&#34;https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalSimpleCodeDeploymentUpdate_hue03014445615ef82f686404e09bf74c0_13872_480x0_resize_box_3.png 480w, https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalSimpleCodeDeploymentUpdate_hue03014445615ef82f686404e09bf74c0_13872_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalSimpleCodeDeploymentUpdate_hu7fba9da1679ce4a56c592454604cb9c1_17263_480x0_resize_q75_box.jpg 480w, https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalSimpleCodeDeploymentUpdate_hu7fba9da1679ce4a56c592454604cb9c1_17263_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Simple Code Deployment Update&#34;
@@ -272,13 +270,12 @@
 		data-flex-basis=&#34;1523px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;/blockquote&gt;
 &lt;h3 id=&#34;gestion-des-déploiements&#34;&gt;Gestion des Déploiements&lt;/h3&gt;
 &lt;h4 id=&#34;azure-portal-deployment-overview&#34;&gt;Azure Portal Deployment Overview&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalDeploymentOverview.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalDeploymentOverview.jpg&#34;
 	width=&#34;1682&#34;
 	height=&#34;804&#34;
-	srcset=&#34;https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalDeploymentOverview_huf734266125f5c03dca277f1750df28f8_149417_480x0_resize_box_3.png 480w, https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalDeploymentOverview_huf734266125f5c03dca277f1750df28f8_149417_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalDeploymentOverview_hu7fba9da1679ce4a56c592454604cb9c1_152582_480x0_resize_q75_box.jpg 480w, https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalDeploymentOverview_hu7fba9da1679ce4a56c592454604cb9c1_152582_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Azure Portal Deployment Overview&#34;
@@ -290,10 +287,10 @@
 	
 &gt;&lt;/p&gt;
 &lt;h4 id=&#34;azure-portal-deployment-inputs&#34;&gt;Azure Portal Deployment Inputs&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalDeploymentInputs.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalDeploymentInputs.jpg&#34;
 	width=&#34;2226&#34;
 	height=&#34;516&#34;
-	srcset=&#34;https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalDeploymentInputs_huf88d0ff46f85ef06409953595aeed1d1_82353_480x0_resize_box_3.png 480w, https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalDeploymentInputs_huf88d0ff46f85ef06409953595aeed1d1_82353_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalDeploymentInputs_hu7fba9da1679ce4a56c592454604cb9c1_90062_480x0_resize_q75_box.jpg 480w, https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalDeploymentInputs_hu7fba9da1679ce4a56c592454604cb9c1_90062_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Azure Portal Deployment Inputs&#34;
@@ -305,10 +302,10 @@
 	
 &gt;&lt;/p&gt;
 &lt;h4 id=&#34;azure-portal-deployment-outputs&#34;&gt;Azure Portal Deployment Outputs&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalDeploymentOutputs.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalDeploymentOutputs.jpg&#34;
 	width=&#34;2224&#34;
 	height=&#34;478&#34;
-	srcset=&#34;https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalDeploymentOutputs_hu96d4e8d8d8a47a7f6a2e7de877047a98_75004_480x0_resize_box_3.png 480w, https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalDeploymentOutputs_hu96d4e8d8d8a47a7f6a2e7de877047a98_75004_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalDeploymentOutputs_hu7fba9da1679ce4a56c592454604cb9c1_71380_480x0_resize_q75_box.jpg 480w, https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalDeploymentOutputs_hu7fba9da1679ce4a56c592454604cb9c1_71380_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Azure Portal Deployment Outputs&#34;
@@ -320,10 +317,10 @@
 	
 &gt;&lt;/p&gt;
 &lt;h4 id=&#34;azure-portal-deployment-template&#34;&gt;Azure Portal Deployment Template&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalDeploymentTemplate.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalDeploymentTemplate.jpg&#34;
 	width=&#34;2228&#34;
 	height=&#34;1528&#34;
-	srcset=&#34;https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalDeploymentTemplate_hua15c97cbc765c2e9a724c952afaafce6_348090_480x0_resize_box_3.png 480w, https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalDeploymentTemplate_hua15c97cbc765c2e9a724c952afaafce6_348090_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalDeploymentTemplate_hu7fba9da1679ce4a56c592454604cb9c1_371783_480x0_resize_q75_box.jpg 480w, https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/AzurePortalDeploymentTemplate_hu7fba9da1679ce4a56c592454604cb9c1_371783_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Azure Portal Deployment Template&#34;

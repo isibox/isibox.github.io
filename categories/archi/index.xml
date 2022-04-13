@@ -14,7 +14,7 @@
         <pubDate>Sat, 26 Mar 2022 00:00:00 +0000</pubDate>
         
         <guid>https://blog.cloud-guru.io/p/landing-zone/</guid>
-        <description>&lt;img src="https://blog.cloud-guru.io/p/landing-zone/landing-zone.jpg" alt="Featured image of post Landing Zone" /&gt;&lt;h2 id=&#34;avant-propos&#34;&gt;Avant-propos&lt;/h2&gt;
+        <description>&lt;img src="https://blog.cloud-guru.io/p/landing-zone/landing-zone-title.jpg" alt="Featured image of post Landing Zone" /&gt;&lt;h2 id=&#34;avant-propos&#34;&gt;Avant-propos&lt;/h2&gt;
 &lt;p&gt;Mes premiers pas, comme architecte technique dans le Cloud, datent de 2014 lorsque que Microsoft a renommé sa &lt;em&gt;&lt;strong&gt;Windows Azure Platform&lt;/strong&gt;&lt;/em&gt; en &lt;em&gt;&lt;strong&gt;Microsoft Azure&lt;/strong&gt;&lt;/em&gt;. Microsoft a proposé, cette même année, son nouveau modèle de déploiement &lt;em&gt;&lt;strong&gt;ARM&lt;/strong&gt;&lt;/em&gt; en remplacement de que l&amp;rsquo;on appelle depuis le modèle &lt;em&gt;&lt;strong&gt;Classic&lt;/strong&gt;&lt;/em&gt;. Ce dernier devrait disparaître en 2023.&lt;/p&gt;
 &lt;p&gt;L&amp;rsquo;&lt;em&gt;&lt;strong&gt;Infrastructure as Code&lt;/strong&gt;&lt;/em&gt; en était vraiment à ses débuts et la maturité d&amp;rsquo;Azure n&amp;rsquo;était pas ce qu&amp;rsquo;elle est aujourd&amp;rsquo;hui. Je travaillais alors avec un de mes collègues développeur systèmes et à chaque nouvelle évolution d&amp;rsquo;ARM, nous devions adapter nos templates ARM et nos scripts powershell pour maintenir les quelques infrastructures applicatives installées sur Azure.&lt;/p&gt;
 &lt;p&gt;Quelques années plus tard, en 2017, dans le cadre d&amp;rsquo;une mission longue chez un &lt;em&gt;&lt;strong&gt;géant de la grande distribution&lt;/strong&gt;&lt;/em&gt;, j&amp;rsquo;ai commencé à travailler sur la définition d&amp;rsquo;un &lt;em&gt;&lt;strong&gt;socle Cloud&lt;/strong&gt;&lt;/em&gt; permettant d&amp;rsquo;accueillir plusieurs centaines de leurs applications dans le cadre d&amp;rsquo;un grand programme de transformation digitale de l&amp;rsquo;Entreprise.&lt;/p&gt;
@@ -28,14 +28,18 @@
 &lt;h2 id=&#34;définition-générique-dune-landing-zone&#34;&gt;Définition générique d&amp;rsquo;une Landing Zone&lt;/h2&gt;
 &lt;p&gt;Nous pouvons définir une Landing Zone (ou Cloud Fondations), comme la prise en compte dans le Cloud, des principes fondateurs proposés dans le schéma ci-dessous et précisés dans les chapitres suivants. Cette définition n&amp;rsquo;est pas normalisée (au sens ISO du terme). Celle-ci n&amp;rsquo;est donc pas unique. Il faut éventuellement l&amp;rsquo;adapter à son propre besoin. Elle a l&amp;rsquo;ambition toutefois de définir une base de réflexion et d&amp;rsquo;amélioration.&lt;/p&gt;
 &lt;h3 id=&#34;schéma&#34;&gt;Schéma&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.cloud-guru.io/img/landing-zone.jpg&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://blog.cloud-guru.io/p/landing-zone/landing-zone.jpg&#34;
+	width=&#34;924&#34;
+	height=&#34;445&#34;
+	srcset=&#34;https://blog.cloud-guru.io/p/landing-zone/landing-zone_hu97cddb074ae303b69f8cf931b4702eca_119310_480x0_resize_q75_box.jpg 480w, https://blog.cloud-guru.io/p/landing-zone/landing-zone_hu97cddb074ae303b69f8cf931b4702eca_119310_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Landing Zone&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;207&#34;
+		data-flex-basis=&#34;498px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;explications-générales&#34;&gt;Explications générales&lt;/h3&gt;
