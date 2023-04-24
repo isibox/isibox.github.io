@@ -2,11 +2,12 @@
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Avant-propos Mes premiers pas, comme architecte technique dans le Cloud, datent de 2014 lorsque que Microsoft a renommé sa Windows Azure Platform en Microsoft Azure. Microsoft a proposé, cette même année, son nouveau modèle de déploiement ARM en remplacement de que l&amp;rsquo;on appelle depuis le modèle Classic. Ce dernier devrait disparaître en 2023.
-L&amp;rsquo;Infrastructure as Code en était vraiment à ses débuts et la maturité d&amp;rsquo;Azure n&amp;rsquo;était pas ce qu&amp;rsquo;elle est aujourd&amp;rsquo;hui.'><title>Landing Zone</title>
+L&amp;rsquo;Infrastructure as Code en était vraiment à ses débuts et la maturité d&amp;rsquo;Azure n&amp;rsquo;était pas ce qu&amp;rsquo;elle est aujourd&amp;rsquo;hui.'>
+<title>Landing Zone</title>
 
 <link rel='canonical' href='https://blog.cloud-guru.io/p/landing-zone/'>
 
-<link rel="stylesheet" href="/scss/style.min.450926226e724574a6b936335ea06111f8aeb253d932c86cb2cc807341cd2889.css"><meta property='og:title' content='Landing Zone'>
+<link rel="stylesheet" href="/scss/style.min.8191399262444ab68b72a18c97392f5349be20a1615d77445be51e974c144cff.css"><meta property='og:title' content='Landing Zone'>
 <meta property='og:description' content='Avant-propos Mes premiers pas, comme architecte technique dans le Cloud, datent de 2014 lorsque que Microsoft a renommé sa Windows Azure Platform en Microsoft Azure. Microsoft a proposé, cette même année, son nouveau modèle de déploiement ARM en remplacement de que l&amp;rsquo;on appelle depuis le modèle Classic. Ce dernier devrait disparaître en 2023.
 L&amp;rsquo;Infrastructure as Code en était vraiment à ses débuts et la maturité d&amp;rsquo;Azure n&amp;rsquo;était pas ce qu&amp;rsquo;elle est aujourd&amp;rsquo;hui.'>
 <meta property='og:url' content='https://blog.cloud-guru.io/p/landing-zone/'>
@@ -65,7 +66,49 @@ L&amp;rsquo;Infrastructure as Code en était vraiment à ses débuts et la matur
         </ol>
     </aside>
     
-<main class="main full-width">
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table des matières</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#avant-propos">Avant-propos</a></li>
+    <li><a href="#définition-générique-dune-landing-zone">Définition générique d&rsquo;une Landing Zone</a>
+      <ul>
+        <li><a href="#schéma">Schéma</a></li>
+        <li><a href="#explications-générales">Explications générales</a></li>
+        <li><a href="#explications-détaillées">Explications détaillées</a></li>
+      </ul>
+    </li>
+    <li><a href="#liens-sur-les-landing-zones-ou-cloud-foundation-chez-les-cloud-providers-azure-gcp-et-aws">Liens sur les Landing Zones (ou Cloud Foundation) chez les Cloud Providers Azure, GCP et AWS</a></li>
+  </ul>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
     <article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
@@ -105,6 +148,9 @@ L&amp;rsquo;Infrastructure as Code en était vraiment à ses débuts et la matur
     </div>
 
     
+    
+    
+    
     <footer class="article-time">
         
             <div>
@@ -141,6 +187,7 @@ L&amp;rsquo;Infrastructure as Code en était vraiment à ses débuts et la matur
 
     
 </div>
+
 </header>
 
     <section class="article-content">
@@ -466,6 +513,8 @@ Nous parlons avant tout ici de principes d&rsquo;architectures Cloud (<strong>1<
 </style>
 
 <script>
+    let utterancesLoaded = false;
+
     function setUtterancesTheme(theme) {
         let utterances = document.querySelector('.utterances iframe');
         if (utterances) {
@@ -481,10 +530,14 @@ Nous parlons avant tout ici de principes d&rsquo;architectures Cloud (<strong>1<
 
     addEventListener('message', event => {
         if (event.origin !== 'https://utteranc.es') return;
+
+        
+        utterancesLoaded = true;
         setUtterancesTheme(document.documentElement.dataset.scheme)
     });
 
     window.addEventListener('onColorSchemeChange', (e) => {
+        if (!utterancesLoaded) return;
         setUtterancesTheme(e.detail)
     })
 </script>
@@ -496,12 +549,14 @@ Nous parlons avant tout ici de principes d&rsquo;architectures Cloud (<strong>1<
     <section class="copyright">
         &copy; 
         
-        2022 Cloud-Guru, le Blog
+            2022 - 
+        
+        2023 Cloud-Guru, le Blog
     </section>
     
     <section class="powerby">
         Généré avec <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Thème <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.11.0">Stack</a></b> conçu par <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Thème <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> conçu par <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 
@@ -578,57 +633,16 @@ Nous parlons avant tout ici de principes d&rsquo;architectures Cloud (<strong>1<
                 >
             </script><link 
                 rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
             ><link 
                 rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
             >
 
             </main>
-    <aside class="sidebar right-sidebar sticky">
-        
-            
-                
-    <section class="widget archives">
-        <div class="widget-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <line x1="5" y1="9" x2="19" y2="9" />
-  <line x1="5" y1="15" x2="19" y2="15" />
-  <line x1="11" y1="4" x2="7" y2="20" />
-  <line x1="17" y1="4" x2="13" y2="20" />
-</svg>
-
-
-
-        </div>
-        <h2 class="widget-title section-title">Table des matières</h2>
-        
-        <div class="widget--toc">
-            <nav id="TableOfContents">
-  <ul>
-    <li><a href="#avant-propos">Avant-propos</a></li>
-    <li><a href="#définition-générique-dune-landing-zone">Définition générique d&rsquo;une Landing Zone</a>
-      <ul>
-        <li><a href="#schéma">Schéma</a></li>
-        <li><a href="#explications-générales">Explications générales</a></li>
-        <li><a href="#explications-détaillées">Explications détaillées</a></li>
-      </ul>
-    </li>
-    <li><a href="#liens-sur-les-landing-zones-ou-cloud-foundation-chez-les-cloud-providers-azure-gcp-et-aws">Liens sur les Landing Zones (ou Cloud Foundation) chez les Cloud Providers Azure, GCP et AWS</a></li>
-  </ul>
-</nav>
-        </div>
-    </section>
-
-            
-        
-    </aside>
-
-
         </div>
         <script 
-                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
             </script><script type="text/javascript" src="/ts/main.js" defer></script>

@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Documentations Produit  Visitez la document Bicep (page d&amp;rsquo;acceuil) Visitez la documentation de référence pour les Templates ARM (page d&amp;rsquo;acceuil)  Principes Résumé  Définition Microsoft : Bicep est un langage spécifique à un domaine (DSL) qui utilise la syntaxe déclarative pour déployer des ressources Azure. Dans un fichier Bicep, vous définissez l’infrastructure que vous voulez déployer sur Azure, puis utilisez ce fichier tout au long du cycle de vie de développement pour déployer votre infrastructure à plusieurs reprises.'><title>Découverte de Bicep</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Documentations Produit Visitez la document Bicep (page d&amp;rsquo;acceuil) Visitez la documentation de référence pour les Templates ARM (page d&amp;rsquo;acceuil) Principes Résumé Définition Microsoft : Bicep est un langage spécifique à un domaine (DSL) qui utilise la syntaxe déclarative pour déployer des ressources Azure. Dans un fichier Bicep, vous définissez l’infrastructure que vous voulez déployer sur Azure, puis utilisez ce fichier tout au long du cycle de vie de développement pour déployer votre infrastructure à plusieurs reprises.'>
+<title>Découverte de Bicep</title>
 
 <link rel='canonical' href='https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/'>
 
-<link rel="stylesheet" href="/scss/style.min.450926226e724574a6b936335ea06111f8aeb253d932c86cb2cc807341cd2889.css"><meta property='og:title' content='Découverte de Bicep'>
-<meta property='og:description' content='Documentations Produit  Visitez la document Bicep (page d&amp;rsquo;acceuil) Visitez la documentation de référence pour les Templates ARM (page d&amp;rsquo;acceuil)  Principes Résumé  Définition Microsoft : Bicep est un langage spécifique à un domaine (DSL) qui utilise la syntaxe déclarative pour déployer des ressources Azure. Dans un fichier Bicep, vous définissez l’infrastructure que vous voulez déployer sur Azure, puis utilisez ce fichier tout au long du cycle de vie de développement pour déployer votre infrastructure à plusieurs reprises.'>
+<link rel="stylesheet" href="/scss/style.min.8191399262444ab68b72a18c97392f5349be20a1615d77445be51e974c144cff.css"><meta property='og:title' content='Découverte de Bicep'>
+<meta property='og:description' content='Documentations Produit Visitez la document Bicep (page d&amp;rsquo;acceuil) Visitez la documentation de référence pour les Templates ARM (page d&amp;rsquo;acceuil) Principes Résumé Définition Microsoft : Bicep est un langage spécifique à un domaine (DSL) qui utilise la syntaxe déclarative pour déployer des ressources Azure. Dans un fichier Bicep, vous définissez l’infrastructure que vous voulez déployer sur Azure, puis utilisez ce fichier tout au long du cycle de vie de développement pour déployer votre infrastructure à plusieurs reprises.'>
 <meta property='og:url' content='https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/'>
 <meta property='og:site_name' content='Cloud-Guru, le Blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2022-04-07T08:15:15&#43;02:00'/><meta property='article:modified_time' content='2022-04-07T08:15:15&#43;02:00'/><meta property='og:image' content='https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/iac.jpg' />
 <meta name="twitter:title" content="Découverte de Bicep">
-<meta name="twitter:description" content="Documentations Produit  Visitez la document Bicep (page d&amp;rsquo;acceuil) Visitez la documentation de référence pour les Templates ARM (page d&amp;rsquo;acceuil)  Principes Résumé  Définition Microsoft : Bicep est un langage spécifique à un domaine (DSL) qui utilise la syntaxe déclarative pour déployer des ressources Azure. Dans un fichier Bicep, vous définissez l’infrastructure que vous voulez déployer sur Azure, puis utilisez ce fichier tout au long du cycle de vie de développement pour déployer votre infrastructure à plusieurs reprises."><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="Documentations Produit Visitez la document Bicep (page d&amp;rsquo;acceuil) Visitez la documentation de référence pour les Templates ARM (page d&amp;rsquo;acceuil) Principes Résumé Définition Microsoft : Bicep est un langage spécifique à un domaine (DSL) qui utilise la syntaxe déclarative pour déployer des ressources Azure. Dans un fichier Bicep, vous définissez l’infrastructure que vous voulez déployer sur Azure, puis utilisez ce fichier tout au long du cycle de vie de développement pour déployer votre infrastructure à plusieurs reprises."><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://blog.cloud-guru.io/p/d%C3%A9couverte-de-bicep/iac.jpg' />
 
 
@@ -62,7 +63,55 @@
         </ol>
     </aside>
     
-<main class="main full-width">
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table des matières</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#documentations-produit">Documentations Produit</a></li>
+    <li><a href="#principes">Principes</a>
+      <ul>
+        <li><a href="#résumé">Résumé</a></li>
+        <li><a href="#aspects-techniques">Aspects Techniques</a></li>
+      </ul>
+    </li>
+    <li><a href="#implémentation">Implémentation</a>
+      <ul>
+        <li><a href="#contexte-de-sécurité">Contexte de Sécurité</a></li>
+        <li><a href="#création">Création</a></li>
+        <li><a href="#mise-à-jour">Mise à Jour</a></li>
+        <li><a href="#gestion-des-déploiements">Gestion des Déploiements</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
     <article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
@@ -102,6 +151,9 @@
     </div>
 
     
+    
+    
+    
     <footer class="article-time">
         
             <div>
@@ -138,6 +190,7 @@
 
     
 </div>
+
 </header>
 
     <section class="article-content">
@@ -516,6 +569,8 @@
 </style>
 
 <script>
+    let utterancesLoaded = false;
+
     function setUtterancesTheme(theme) {
         let utterances = document.querySelector('.utterances iframe');
         if (utterances) {
@@ -531,10 +586,14 @@
 
     addEventListener('message', event => {
         if (event.origin !== 'https://utteranc.es') return;
+
+        
+        utterancesLoaded = true;
         setUtterancesTheme(document.documentElement.dataset.scheme)
     });
 
     window.addEventListener('onColorSchemeChange', (e) => {
+        if (!utterancesLoaded) return;
         setUtterancesTheme(e.detail)
     })
 </script>
@@ -546,12 +605,14 @@
     <section class="copyright">
         &copy; 
         
-        2022 Cloud-Guru, le Blog
+            2022 - 
+        
+        2023 Cloud-Guru, le Blog
     </section>
     
     <section class="powerby">
         Généré avec <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Thème <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.11.0">Stack</a></b> conçu par <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Thème <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> conçu par <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 
@@ -628,63 +689,16 @@
                 >
             </script><link 
                 rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
             ><link 
                 rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
             >
 
             </main>
-    <aside class="sidebar right-sidebar sticky">
-        
-            
-                
-    <section class="widget archives">
-        <div class="widget-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <line x1="5" y1="9" x2="19" y2="9" />
-  <line x1="5" y1="15" x2="19" y2="15" />
-  <line x1="11" y1="4" x2="7" y2="20" />
-  <line x1="17" y1="4" x2="13" y2="20" />
-</svg>
-
-
-
-        </div>
-        <h2 class="widget-title section-title">Table des matières</h2>
-        
-        <div class="widget--toc">
-            <nav id="TableOfContents">
-  <ul>
-    <li><a href="#documentations-produit">Documentations Produit</a></li>
-    <li><a href="#principes">Principes</a>
-      <ul>
-        <li><a href="#résumé">Résumé</a></li>
-        <li><a href="#aspects-techniques">Aspects Techniques</a></li>
-      </ul>
-    </li>
-    <li><a href="#implémentation">Implémentation</a>
-      <ul>
-        <li><a href="#contexte-de-sécurité">Contexte de Sécurité</a></li>
-        <li><a href="#création">Création</a></li>
-        <li><a href="#mise-à-jour">Mise à Jour</a></li>
-        <li><a href="#gestion-des-déploiements">Gestion des Déploiements</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-        </div>
-    </section>
-
-            
-        
-    </aside>
-
-
         </div>
         <script 
-                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
             </script><script type="text/javascript" src="/ts/main.js" defer></script>
